@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "A RESTful web service, enabling integration with GOV.UK Notify platform using HTTP protocols alone.",
+    "description": "A RESTful web service, enabling integration with the GOV.UK Notify platform over HTTP protocols alone.",
     "version": "v1",
     "title": "GOV.UK Notify Gateway"
   },
