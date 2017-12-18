@@ -670,3 +670,12 @@
 "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5744
 "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
 "GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"GET / HTTP/1.1" 404 2380
+"GET / HTTP/1.1" 404 2380
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3467
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5515
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 200 445

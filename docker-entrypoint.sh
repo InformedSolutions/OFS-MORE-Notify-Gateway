@@ -2,7 +2,7 @@
 
 # Create database migration files
 echo "Create database migration files"
-python manage.py makemigrations app
+python manage.py makemigrations application
 
 # Apply database migrations
 echo "Apply database migrations"
