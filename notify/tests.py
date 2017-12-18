@@ -28,7 +28,7 @@ class TestApi(unittest.TestCase):
         input = {
             "apiKey": "dev_api-7c51af0f-8720-4315-9d67-b4f94d7531e0-df9b0c2e-6d50-4102-ae62-9a24cde656cc"
         }
-        response = self.client.put('/api/v1/notifications/api-key/' , json.dumps(input), 'application/json' , header=header)
+        response = self.client.put('/notify-gateway/api/v1/notifications/api-key/' , json.dumps(input), 'application/json' , header=header)
         self.assertEqual(response.status_code, 200)
     def test_badSetApiKey(self):
         #Update the API key, with an empty string
@@ -37,7 +37,7 @@ class TestApi(unittest.TestCase):
         input = {
             "apiKey": ""
         }
-        response = self.client.put('/api/v1/notifications/api-key/' , json.dumps(input), 'application/json' , header=header)
+        response = self.client.put('/notify-gateway/api/v1/notifications/api-key/' , json.dumps(input), 'application/json' , header=header)
         #This test is meant to fail
         self.assertEqual(response.status_code, 400)
 
@@ -51,7 +51,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "f33517ff-2a88-4f6e-b855-c550268ce08a"
             }
-        response = self.client.post('/api/v1/notifications/email/' , json.dumps(input), 'application/json', header=header)
+        response = self.client.post('/notify-gateway/api/v1/notifications/email/' , json.dumps(input), 'application/json', header=header)
         self.assertEqual(response.status_code, 400)
     def test_PostMissingEmailReq(self):
         #Test Email request that's missing email
@@ -63,7 +63,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "a741fed2-7948-4b1a-b44a-fec8485ec700"
         }
-        response = self.client.post('/api/v1/notifications/email/' , json.dumps(input), 'application/json')
+        response = self.client.post('/notify-gateway/api/v1/notifications/email/' , json.dumps(input), 'application/json')
         self.assertEqual(response.status_code, 400)
 
 
@@ -78,7 +78,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "a741fed2-7948-4b1a-b44a-fec8485ec700"
         }
-        response = self.client.post('/api/v1/notifications/email/' , json.dumps(input), 'application/json')
+        response = self.client.post('/notify-gateway/api/v1/notifications/email/' , json.dumps(input), 'application/json')
         self.assertEqual(response.status_code, 201)
     
     def test_PostSMSReq(self):
@@ -93,7 +93,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "b2f0171a-774e-47bc-b7ef-5328758447c4"
             }
-        response = self.client.post('/api/v1/notifications/sms/' , json.dumps(input), 'application/json', header=header)
+        response = self.client.post('/notify-gateway/api/v1/notifications/sms/' , json.dumps(input), 'application/json', header=header)
         self.assertEqual(response.status_code, 201)
     def test_PostBadSMSReq(self):
         #test sending SMS request with email data
@@ -106,7 +106,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "a741fed2-7948-4b1a-b44a-fec8485ec700"
         }
-        response = self.client.post('/api/v1/notifications/sms/' , json.dumps(input), 'application/json')
+        response = self.client.post('/notify-gateway/api/v1/notifications/sms/' , json.dumps(input), 'application/json')
         self.assertEqual(response.status_code, 400)
     def test_PostMissingSMSReq(self):
         #test SMS message with missing phone number
@@ -119,6 +119,6 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "b2f0171a-774e-47bc-b7ef-5328758447c4"
             }
-        response = self.client.post('/api/v1/notifications/sms/' , json.dumps(input), 'application/json', header=header)
+        response = self.client.post('/notify-gateway/api/v1/notifications/sms/' , json.dumps(input), 'application/json', header=header)
         self.assertEqual(response.status_code, 400)
 
