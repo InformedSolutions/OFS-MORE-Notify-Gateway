@@ -6,7 +6,10 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from application.serializers import EmailSerializer, SmsSerializer, NotifySerializer
 from django.conf import settings
+import logging
+import traceback 
 
+log = logging.getLogger('django.server')
 NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
 
 @api_view(['PUT'])
@@ -19,10 +22,17 @@ def change_api_key(request):
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['apiKey'])
             return JsonResponse({"message":"Api key successfully updated"}, status=200)
         err = formatError(serializer.errors)
+        log.error("Django serialization error: " +err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error":"Bad Request",}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
+        exceptiondata = traceback.format_exc().splitlines()
+        exceptionarray = [exceptiondata[-3:]]
+        log.error(exceptionarray)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
+        exceptiondata = traceback.format_exc().splitlines()
+        exceptionarray = [exceptiondata[-3:]]
+        log.error(exceptionarray)
         return JsonResponse(ex.__dict__, status=500)
 
 @api_view(['POST'])
@@ -34,10 +44,17 @@ def send_email(request):
             #call method to send email
             return send_email_via_notify(serializer.data)
         err = formatError(serializer.errors)
-        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request",}, status=status.HTTP_400_BAD_REQUEST)
+        log.error("Django serialization error: " +err[0] + err[1])
+        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
+        exceptiondata = traceback.format_exc().splitlines()
+        exceptionarray = [exceptiondata[-3:]]
+        log.error(exceptionarray)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
+        exceptiondata = traceback.format_exc().splitlines()
+        exceptionarray = [exceptiondata[-3:]]
+        log.error(exceptionarray)
         return JsonResponse(ex.__dict__, status=500)
 
 
@@ -49,10 +66,17 @@ def send_sms(request):
         if serializer.is_valid():
             return send_sms_via_notify(serializer.data)
         err = formatError(serializer.errors)
-        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request",}, status=status.HTTP_400_BAD_REQUEST)
+        log.error("Django serialization error: " +err[0] + err[1])
+        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
+        exceptiondata = traceback.format_exc().splitlines()
+        exceptionarray = [exceptiondata[-3:]]
+        log.error(exceptionarray)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
+        exceptiondata = traceback.format_exc().splitlines()
+        exceptionarray = [exceptiondata[-3:]]
+        log.error(exceptionarray)
         return JsonResponse(ex.__dict__, status=500)
 
 

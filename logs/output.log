@@ -754,3 +754,134 @@
 2017-12-19 10:35:20,969 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
 2017-12-19 10:35:21,672 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
 2017-12-19 10:35:22,377 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:34:01,514 django.server ERROR    YO
+2017-12-19 11:34:01,545 django.server ERROR    YO
+2017-12-19 11:34:02,499 django.server ERROR    YO
+2017-12-19 11:34:35,482 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+2017-12-19 11:34:35,519 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+2017-12-19 11:34:35,519 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 304 0
+2017-12-19 11:34:35,522 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+2017-12-19 11:34:35,866 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 6029
+2017-12-19 11:34:36,061 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 11:34:41,521 django.server ERROR    YO
+2017-12-19 11:34:42,737 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:36:04,916 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:37:11,524 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:38:12,345 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:38:23,736 django.server WARNING  "POST /notify-gateway/api/v1/notifications/sms/ HTTP/1.1" 400 63
+2017-12-19 11:40:25,395 django.server WARNING  "POST /notify-gateway/api/v1/notifications/sms/ HTTP/1.1" 400 63
+2017-12-19 11:42:04,269 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 11:43:18,912 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 11:45:01,773 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+2017-12-19 11:45:02,181 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+2017-12-19 11:45:02,380 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 11:45:11,392 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:45:43,767 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:46:49,901 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:49:46,671 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:50:40,939 django.server INFO     {'email': ['This field is required.']}
+2017-12-19 11:50:40,940 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:54:10,114 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:54:10,115 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:54:49,254 django.server ERROR    {'detail': 'JSON parse error - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)'}
+2017-12-19 11:54:49,255 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 108
+2017-12-19 11:55:36,871 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 17148
+2017-12-19 11:56:35,593 django.server ERROR    {'detail': 'JSON parse error - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)'}
+2017-12-19 11:56:35,595 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 108
+2017-12-19 11:57:49,390 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:57:49,391 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:58:41,896 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:58:41,950 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 15715
+2017-12-19 11:59:02,531 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:59:02,533 django.server ERROR    (<class 'IndexError'>, IndexError('list index out of range',), <traceback object at 0x0000000004D1B988>)
+2017-12-19 11:59:02,534 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:00:22,751 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 12:00:22,752 django.server ERROR    (<class 'TypeError'>, TypeError('formatError() takes 1 positional argument but 2 were given',), <traceback object at 0x0000000004D08AC8>)
+2017-12-19 12:00:22,753 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:01:16,400 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 12:01:16,403 django.server ERROR    (<class 'TypeError'>, TypeError('formatError() takes 1 positional argument but 2 were given',), <traceback object at 0x0000000004D2AC88>)
+2017-12-19 12:01:16,407 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:01:39,648 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 12:01:46,206 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:03:03,802 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16907
+2017-12-19 12:04:00,238 django.server ERROR    (<class 'notifications_python_client.errors.HTTPError'>, HTTPError(<Response [400]>,), <traceback object at 0x0000000004D2B808>)
+2017-12-19 12:04:00,240 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:05:57,714 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16859
+2017-12-19 12:06:30,955 django.server ERROR    Traceback (most recent call last):
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\base.py", line 86, in request
+    response.raise_for_status()
+  File "C:\Python 3.5\lib\site-packages\requests\models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\stylesm\Desktop\test\OFS-MORE-Beta-Secured\source\notify\application\views.py", line 38, in send_email
+    return send_email_via_notify(serializer.data)
+  File "C:\Users\stylesm\Desktop\test\OFS-MORE-Beta-Secured\source\notify\application\views.py", line 83, in send_email_via_notify
+    email_reply_to_id=None)
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\notifications.py", line 58, in send_email_notification
+    data=notification)
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\base.py", line 52, in post
+    return self.request("POST", url, data=data)
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\base.py", line 97, in request
+    raise api_error
+notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]
+
+2017-12-19 12:06:30,957 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:11:59,969 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 87, in send_email_via_notify', '    personalisation=personalisation,', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:11:59,970 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:13:08,449 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:13:08,450 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:15:40,681 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]
+2017-12-19 12:15:40,683 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:16:17,023 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16909
+2017-12-19 12:16:53,932 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16909
+2017-12-19 12:17:05,892 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]
+2017-12-19 12:17:05,894 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:17:30,941 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()']
+2017-12-19 12:17:30,945 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:17:59,087 django.server ERROR    [[]]
+2017-12-19 12:17:59,088 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:18:22,792 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']]
+2017-12-19 12:18:22,793 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:19:01,008 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:19:01,012 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:19:06,864 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:19:06,865 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:20:05,435 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:20:05,436 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:20:47,261 django.server ERROR    [['Traceback (most recent call last):', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:20:47,262 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:22:22,596 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:22:22,597 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:23:28,456 django.server ERROR    [['NoneType']]
+2017-12-19 12:23:28,457 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 12:27:42,936 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:27:42,937 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:29:40,003 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:29:40,004 django.server ERROR    None
+2017-12-19 12:29:40,005 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:30:17,938 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:30:17,939 django.server ERROR    None
+2017-12-19 12:30:17,943 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:32:15,328 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:32:15,423 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16879
+2017-12-19 12:33:11,459 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:33:11,532 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16882
+2017-12-19 12:34:27,354 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:34:27,355 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:35:01,856 django.server ERROR    [['  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 39, in send_email', '    log.error(err[0] + err[1])', "UnboundLocalError: local variable 'err' referenced before assignment"]]
+2017-12-19 12:35:01,859 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:35:51,640 django.server ERROR    [['  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 39, in send_email', '    log.error("Django serialization error: " +err[0] + err[1])', "UnboundLocalError: local variable 'err' referenced before assignment"]]
+2017-12-19 12:35:51,641 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:35:56,841 django.server ERROR    [['  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 39, in send_email', '    log.error("Django serialization error: " +err[0] + err[1])', "UnboundLocalError: local variable 'err' referenced before assignment"]]
+2017-12-19 12:35:56,843 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:36:15,957 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 12:36:15,958 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 12:38:52,198 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 12:38:52,228 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 12:38:53,271 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 12:38:53,283 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 12:38:53,564 django.server ERROR    Django serialization error: 'apiKey' 'This field may not be blank.'
