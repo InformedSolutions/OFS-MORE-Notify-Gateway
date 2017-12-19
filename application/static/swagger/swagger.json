@@ -137,9 +137,7 @@
           "400": {
             "description": "Bad request"
           },
-		  "429": {
-            "description": "Exceeded send limits (50) for today"
-          },
+
           "500": {
              "description": "Server error"
           }

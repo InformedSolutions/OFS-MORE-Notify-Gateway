@@ -10,6 +10,7 @@ import logging
 import traceback 
 
 log = logging.getLogger('django.server')
+
 NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
 
 @api_view(['PUT'])
@@ -19,6 +20,7 @@ def change_api_key(request):
         serializer = NotifySerializer(data=request.data)
         if serializer.is_valid():
             #API key set
+            global NOTIFICATIONS_CLIENT
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['apiKey'])
             return JsonResponse({"message":"Api key successfully updated"}, status=200)
         err = formatError(serializer.errors)
