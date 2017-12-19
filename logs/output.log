@@ -901,3 +901,10 @@ notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError'
 2017-12-19 13:12:32,237 django.server ERROR    Django serialization error: 'apiKey' 'This field may not be blank.'
 2017-12-19 13:27:41,455 django.server WARNING  "GET / HTTP/1.1" 404 2380
 2017-12-19 13:27:43,351 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5639
+2017-12-19 14:17:01,803 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3656
+2017-12-19 14:17:01,851 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+2017-12-19 14:17:01,960 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+2017-12-19 14:17:01,976 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+2017-12-19 14:17:02,903 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5639
+2017-12-19 14:17:03,949 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 14:17:04,111 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
