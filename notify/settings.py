@@ -131,7 +131,9 @@ LOGGING = {
         'maxBytes': 1 * 1024 * 1024,
         'filename': 'logs/output.log',
         'formatter': 'console',
-        'maxBytes': 1 * 1024 * 1024
+        'maxBytes': 1 * 1024 * 1024,
+        'when': 'midnight',
+        'backupCount': '30'
     },
    },
    'loggers': {
