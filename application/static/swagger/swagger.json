@@ -51,9 +51,6 @@
           "400": {
             "description": "Bad request"
           },
-		  "429": {
-            "description": "Exceeded send limits (50) for today"
-          },
           "500": {
              "description": "Server error"
           }
@@ -94,9 +91,6 @@
           "400": {
             "description": "Bad request"
           },
-		  "429": {
-            "description": "Exceeded send limits (50) for today"
-          },
           "500": {
              "description": "Server error"
           }
@@ -136,8 +130,7 @@
           },
           "400": {
             "description": "Bad request"
-          },
-
+			}
           "500": {
              "description": "Server error"
           }
@@ -191,10 +184,14 @@
           "example": "e6d76c78-5a3d-4808-8389-359cda72d38a"
         },
         "personalisation": {
-          "type": "object"
+          "type": "object",
+		  "example": {
+            "full_name": "Ms Test Recipient"
+          }
         },
         "reference": {
-          "type": "string"
+          "type": "string",
+          "example": "custom-reference-identifier"
         }
       }
     },

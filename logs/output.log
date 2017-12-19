@@ -894,3 +894,8 @@ notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError'
 2017-12-19 12:58:46,116 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
 2017-12-19 13:08:40,671 django.server INFO     "PUT /notify-gateway/api/v1/notifications/api-key/ HTTP/1.1" 200 43
 2017-12-19 13:08:46,853 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 13:12:31,000 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 13:12:31,051 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 13:12:31,996 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 13:12:32,049 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 13:12:32,237 django.server ERROR    Django serialization error: 'apiKey' 'This field may not be blank.'
