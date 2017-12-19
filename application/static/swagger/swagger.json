@@ -210,9 +210,14 @@
     "NotificationCreationResponse": {
       "type": "object",
       "required": [
-        "notifyId"
+        "notifyId",
+		"message"
       ],
       "properties": {
+ 		"message": {
+		  "type": "string",
+		  "example": "Email sent successfully"
+		},
         "notifyId": {
           "type": "string",
           "format": "uuid"
