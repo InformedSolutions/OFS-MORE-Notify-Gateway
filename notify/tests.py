@@ -71,7 +71,7 @@ class TestApi(unittest.TestCase):
         #Test Sending Email
         self.client = Client()
         input = {
-            "email": "matthew.styles@informed.com",
+            "email": "simulate-delivered@notifications.service.gov.uk",
             "personalisation": {
             "full name":"Name"
         },
@@ -89,7 +89,7 @@ class TestApi(unittest.TestCase):
             "personalisation": {
             "first name":"Name"
         },
-            "phoneNumber": "07557986930",
+            "phoneNumber": "07700900111",
             "reference": "string",
             "templateId": "b2f0171a-774e-47bc-b7ef-5328758447c4"
             }

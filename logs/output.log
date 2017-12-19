@@ -736,3 +736,21 @@
 "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
 "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
 "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:34:53,909 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+2017-12-19 10:34:54,484 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 10:34:59,800 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:19,355 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:20,286 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:20,969 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:21,672 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:22,377 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63

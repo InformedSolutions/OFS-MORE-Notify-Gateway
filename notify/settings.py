@@ -118,11 +118,20 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 LOGGING = {
   'version': 1,
   'disable_existing_loggers': False,
+  'formatters': {
+'console': {
+            # exact format is not important, this is the minimum information
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+        },
+        },
   'handlers': {
     'django.server': {
         'level': 'INFO',
-        'class': 'logging.FileHandler',
+        'class': 'logging.handlers.RotatingFileHandler',
+        'maxBytes': 1 * 1024 * 1024,
         'filename': 'logs/output.log',
+        'formatter': 'console',
+        'maxBytes': 1 * 1024 * 1024
     },
    },
    'loggers': {
@@ -134,8 +143,8 @@ LOGGING = {
     },
 }
 
-#Notify API Dev Key
-NOTIFY_API_KEY="dev_api-7c51af0f-8720-4315-9d67-b4f94d7531e0-df9b0c2e-6d50-4102-ae62-9a24cde656cc"
+#Notify API Test Key
+NOTIFY_API_KEY="test_key-7c51af0f-8720-4315-9d67-b4f94d7531e0-6ebc794f-f0d9-40c6-bd4f-013119b47c04"
 
 #Test outputs
 TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
