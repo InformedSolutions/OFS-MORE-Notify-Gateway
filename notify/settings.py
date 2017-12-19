@@ -136,3 +136,9 @@ LOGGING = {
 
 #Notify API Dev Key
 NOTIFY_API_KEY="dev_api-7c51af0f-8720-4315-9d67-b4f94d7531e0-df9b0c2e-6d50-4102-ae62-9a24cde656cc"
+
+#Test outputs
+TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
+TEST_OUTPUT_VERBOSE = True
+TEST_OUTPUT_DESCRIPTIONS = True
+TEST_OUTPUT_DIR = 'xmlrunner'
