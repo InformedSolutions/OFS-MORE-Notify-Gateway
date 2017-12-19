@@ -1,0 +1,903 @@
+"GET / HTTP/1.1" 200 3665
+"GET /?format=openapi HTTP/1.1" 200 1044
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3665
+"GET /?format=openapi HTTP/1.1" 200 1044
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3665
+"GET /?format=openapi HTTP/1.1" 200 1044
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3665
+"GET /?format=openapi HTTP/1.1" 200 1044
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3665
+"GET /?format=openapi HTTP/1.1" 200 1044
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 75496
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 75496
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 102
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14501
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14511
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14511
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14516
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14622
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14624
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 79
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 75832
+"POST /api/v1/notifications/text/ HTTP/1.1" 200 18
+"POST /api/v1/notifications/text/ HTTP/1.1" 200 15
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/text/ HTTP/1.1" 500 14597
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 72
+"POST /api/v1/notifications/email/ HTTP/1.1" 404 2371
+"POST /api/v1/notifications/text/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 404 2371
+"POST /api/v1/notifications/emails/ HTTP/1.1" 200 0
+"POST /api/v1/notifications/changeKey/ HTTP/1.1" 500 15790
+"POST /api/v1/notifications/changeKey/ HTTP/1.1" 500 14523
+"POST /api/v1/notifications/changeKey/ HTTP/1.1" 500 75563
+"POST /api/v1/notifications/changeKey/ HTTP/1.1" 200 0
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /static/rest_framework_swagger/css/typography.css HTTP/1.1" 200 452
+"GET /static/rest_framework_swagger/css/reset.css HTTP/1.1" 200 1066
+"GET /static/rest_framework_swagger/css/screen.css HTTP/1.1" 200 48986
+"GET /static/rest_framework_swagger/lib/jquery.slideto.min.js HTTP/1.1" 200 369
+"GET /static/rest_framework_swagger/lib/object-assign-pollyfill.js HTTP/1.1" 200 692
+"GET /static/rest_framework_swagger/lib/jquery.wiggle.min.js HTTP/1.1" 200 762
+"GET /static/rest_framework_swagger/lib/jquery-1.8.0.min.js HTTP/1.1" 200 92555
+"GET /static/rest_framework_swagger/lib/jquery.ba-bbq.min.js HTTP/1.1" 200 4119
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack.js HTTP/1.1" 200 11037
+"GET /static/rest_framework_swagger/lib/handlebars-2.0.0.js HTTP/1.1" 200 48517
+"GET /static/rest_framework_swagger/lib/lodash.min.js HTTP/1.1" 200 52646
+"GET /static/rest_framework_swagger/lib/js-yaml.min.js HTTP/1.1" 200 43621
+"GET /static/rest_framework_swagger/lib/backbone-min.js HTTP/1.1" 200 20390
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack_extended.js HTTP/1.1" 200 1025
+"GET /static/rest_framework_swagger/lib/marked.js HTTP/1.1" 200 28156
+"GET /static/rest_framework_swagger/lib/swagger-oauth.js HTTP/1.1" 200 11615
+"GET /static/rest_framework_swagger/lib/jsoneditor.min.js HTTP/1.1" 200 130042
+"GET /static/rest_framework_swagger/swagger-ui.min.js HTTP/1.1" 200 289384
+"GET /static/rest_framework_swagger/init.js HTTP/1.1" 200 1434
+"GET /static/rest_framework_swagger/images/logo_small.png HTTP/1.1" 200 770
+"GET /static/rest_framework_swagger/css/print.css HTTP/1.1" 200 46473
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /static/rest_framework_swagger/css/reset.css HTTP/1.1" 200 1066
+"GET /static/rest_framework_swagger/css/typography.css HTTP/1.1" 200 452
+"GET /static/rest_framework_swagger/lib/jquery-1.8.0.min.js HTTP/1.1" 200 92555
+"GET /static/rest_framework_swagger/css/screen.css HTTP/1.1" 200 48986
+"GET /static/rest_framework_swagger/lib/object-assign-pollyfill.js HTTP/1.1" 200 692
+"GET /static/rest_framework_swagger/lib/jquery.slideto.min.js HTTP/1.1" 200 369
+"GET /static/rest_framework_swagger/lib/jquery.ba-bbq.min.js HTTP/1.1" 200 4119
+"GET /static/rest_framework_swagger/lib/backbone-min.js HTTP/1.1" 200 20390
+"GET /static/rest_framework_swagger/lib/jquery.wiggle.min.js HTTP/1.1" 200 762
+"GET /static/rest_framework_swagger/lib/handlebars-2.0.0.js HTTP/1.1" 200 48517
+"GET /static/rest_framework_swagger/lib/lodash.min.js HTTP/1.1" 200 52646
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack.js HTTP/1.1" 200 11037
+"GET /static/rest_framework_swagger/lib/js-yaml.min.js HTTP/1.1" 200 43621
+"GET /static/rest_framework_swagger/lib/marked.js HTTP/1.1" 200 28156
+"GET /static/rest_framework_swagger/lib/swagger-oauth.js HTTP/1.1" 200 11615
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack_extended.js HTTP/1.1" 200 1025
+"GET /static/rest_framework_swagger/swagger-ui.min.js HTTP/1.1" 200 289384
+"GET /static/rest_framework_swagger/lib/jsoneditor.min.js HTTP/1.1" 200 130042
+"GET /static/rest_framework_swagger/init.js HTTP/1.1" 200 1434
+"GET /static/rest_framework_swagger/images/logo_small.png HTTP/1.1" 200 770
+"GET /static/rest_framework_swagger/css/print.css HTTP/1.1" 200 46473
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET / HTTP/1.1" 200 3842
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"GET / HTTP/1.1" 200 3842
+"GET /static/rest_framework_swagger/css/reset.css HTTP/1.1" 200 1066
+"GET /static/rest_framework_swagger/css/typography.css HTTP/1.1" 200 452
+"GET /static/rest_framework_swagger/lib/object-assign-pollyfill.js HTTP/1.1" 200 692
+"GET /static/rest_framework_swagger/lib/jquery.slideto.min.js HTTP/1.1" 200 369
+"GET /static/rest_framework_swagger/css/screen.css HTTP/1.1" 200 48986
+"GET /static/rest_framework_swagger/lib/jquery.wiggle.min.js HTTP/1.1" 200 762
+"GET /static/rest_framework_swagger/lib/backbone-min.js HTTP/1.1" 200 20390
+"GET /static/rest_framework_swagger/lib/jquery.ba-bbq.min.js HTTP/1.1" 200 4119
+"GET /static/rest_framework_swagger/lib/jquery-1.8.0.min.js HTTP/1.1" 200 92555
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack_extended.js HTTP/1.1" 200 1025
+"GET /static/rest_framework_swagger/lib/js-yaml.min.js HTTP/1.1" 200 43621
+"GET /static/rest_framework_swagger/lib/handlebars-2.0.0.js HTTP/1.1" 200 48517
+"GET /static/rest_framework_swagger/lib/marked.js HTTP/1.1" 200 28156
+"GET /static/rest_framework_swagger/lib/swagger-oauth.js HTTP/1.1" 200 11615
+"GET /static/rest_framework_swagger/lib/lodash.min.js HTTP/1.1" 200 52646
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack.js HTTP/1.1" 200 11037
+"GET /static/rest_framework_swagger/swagger-ui.min.js HTTP/1.1" 200 289384
+"GET /static/rest_framework_swagger/lib/jsoneditor.min.js HTTP/1.1" 200 130042
+"GET /static/rest_framework_swagger/init.js HTTP/1.1" 200 1434
+"GET /static/rest_framework_swagger/images/logo_small.png HTTP/1.1" 200 770
+"GET /static/rest_framework_swagger/css/print.css HTTP/1.1" 200 46473
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 443
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 1258
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/emails/ HTTP/1.1" 400 0
+"GET / HTTP/1.1" 200 3842
+"GET /?format=openapi HTTP/1.1" 200 1265
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"POST /api/v1/notifications/emails/ HTTP/1.1" 500 94636
+"GET / HTTP/1.1" 200 3842
+"GET /static/rest_framework_swagger/css/reset.css HTTP/1.1" 200 1066
+"GET /static/rest_framework_swagger/css/typography.css HTTP/1.1" 200 452
+"GET /static/rest_framework_swagger/lib/object-assign-pollyfill.js HTTP/1.1" 200 692
+"GET /static/rest_framework_swagger/css/screen.css HTTP/1.1" 200 48986
+"GET /static/rest_framework_swagger/lib/jquery.slideto.min.js HTTP/1.1" 200 369
+"GET /static/rest_framework_swagger/lib/jquery-1.8.0.min.js HTTP/1.1" 200 92555
+"GET /static/rest_framework_swagger/lib/jquery.wiggle.min.js HTTP/1.1" 200 762
+"GET /static/rest_framework_swagger/lib/jquery.ba-bbq.min.js HTTP/1.1" 200 4119
+"GET /static/rest_framework_swagger/lib/handlebars-2.0.0.js HTTP/1.1" 200 48517
+"GET /static/rest_framework_swagger/lib/backbone-min.js HTTP/1.1" 200 20390
+"GET /static/rest_framework_swagger/lib/lodash.min.js HTTP/1.1" 200 52646
+"GET /static/rest_framework_swagger/lib/js-yaml.min.js HTTP/1.1" 200 43621
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack.js HTTP/1.1" 200 11037
+"GET /static/rest_framework_swagger/swagger-ui.min.js HTTP/1.1" 200 289384
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack_extended.js HTTP/1.1" 200 1025
+"GET /static/rest_framework_swagger/lib/swagger-oauth.js HTTP/1.1" 200 11615
+"GET /static/rest_framework_swagger/lib/marked.js HTTP/1.1" 200 28156
+"GET /static/rest_framework_swagger/lib/jsoneditor.min.js HTTP/1.1" 200 130042
+"GET /static/rest_framework_swagger/init.js HTTP/1.1" 200 1434
+"GET /static/rest_framework_swagger/images/logo_small.png HTTP/1.1" 200 770
+"GET /static/rest_framework_swagger/css/print.css HTTP/1.1" 200 46473
+"GET /?format=openapi HTTP/1.1" 200 1265
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+"GET /static/rest_framework_swagger/images/favicon-16x16.png HTTP/1.1" 200 645
+"GET / HTTP/1.1" 500 81046
+"GET /favicon.ico HTTP/1.1" 404 1957
+"GET / HTTP/1.1" 500 79729
+"GET /static HTTP/1.1" 404 1942
+"GET /static/swagger/index.html HTTP/1.1" 404 1667
+"GET /static/swagger/index.html HTTP/1.1" 404 1667
+"GET /static/swagger/index.html HTTP/1.1" 404 1667
+"GET /index.html HTTP/1.1" 404 1954
+"GET / HTTP/1.1" 500 78505
+"GET / HTTP/1.1" 404 2158
+"GET /swagger HTTP/1.1" 404 2197
+"GET /swagger/index.html HTTP/1.1" 404 1645
+"GET /static/swagger/index.html HTTP/1.1" 404 2251
+"GET / HTTP/1.1" 404 2158
+"GET /static HTTP/1.1" 404 2194
+"GET /static/swagger HTTP/1.1" 404 2218
+"GET /static/swagger/index.html HTTP/1.1" 404 1659
+"GET /static/swagger/ HTTP/1.1" 404 1639
+"GET /static/swagger/ HTTP/1.1" 404 1740
+"GET /static/swagger/index.html HTTP/1.1" 404 1760
+"GET /swagger/index.html HTTP/1.1" 404 2367
+"GET /static/swagger HTTP/1.1" 301 0
+"GET /static/swagger/ HTTP/1.1" 404 1740
+"GET /static/swagger/ HTTP/1.1" 404 1738
+"GET /swagger/ HTTP/1.1" 404 2328
+"GET /static/swagger/ HTTP/1.1" 404 1738
+"GET /static/swagger/index.html HTTP/1.1" 404 1768
+"GET /swagger/index.html HTTP/1.1" 200 4197
+"GET /static/rest_framework_swagger/css/reset.css HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/css/typography.css HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/css/screen.css HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/object-assign-pollyfill.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/jquery-1.8.0.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/jquery.slideto.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/jquery.wiggle.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/jquery.ba-bbq.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/handlebars-2.0.0.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/js-yaml.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/lodash.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/backbone-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/swagger-ui.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack_extended.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/jsoneditor.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/marked.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/lib/swagger-oauth.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/init.js HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/images/logo_small.png HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/css/print.css HTTP/1.1" 304 0
+"GET /swagger/index.html?format=openapi HTTP/1.1" 200 1318
+"GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/images/favicon-16x16.png HTTP/1.1" 304 0
+"GET /static/rest_framework_swagger/images/throbber.gif HTTP/1.1" 200 9257
+"GET / HTTP/1.1" 200 4179
+"GET /?format=openapi HTTP/1.1" 200 1318
+"GET /static HTTP/1.1" 200 4185
+"GET /static?format=openapi HTTP/1.1" 200 1318
+"GET /static/swagger/ HTTP/1.1" 404 1752
+"GET /static/swagger/index.html HTTP/1.1" 404 1782
+"GET /static/swagger/index.html HTTP/1.1" 404 1667
+"GET /static HTTP/1.1" 404 2194
+"GET /static HTTP/1.1" 301 0
+"GET /static/ HTTP/1.1" 404 1724
+"GET /static/swagger/index.html HTTP/1.1" 404 1768
+"GET /static/index.html HTTP/1.1" 404 1744
+"GET /static/index.html HTTP/1.1" 404 1744
+"GET /static/index.html HTTP/1.1" 404 1744
+"GET /static/swagger.html HTTP/1.1" 404 1750
+"GET /index.html HTTP/1.1" 404 2334
+"GET /static/index.html HTTP/1.1" 404 1744
+"GET /static/index.html HTTP/1.1" 404 1744
+"GET /static/swagger.json HTTP/1.1" 404 1750
+"GET /swagger.json HTTP/1.1" 404 2340
+"GET /static/swagger.json HTTP/1.1" 404 1750
+"GET /static/index.html HTTP/1.1" 404 1744
+"GET /static/ HTTP/1.1" 404 1724
+"GET /static/ HTTP/1.1" 404 1724
+"GET /static/index.html HTTP/1.1" 200 3499
+"GET /static/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger.json HTTP/1.1" 200 3321
+"GET /static/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/favicon-16x16.png HTTP/1.1" 200 445
+"GET /static/swagger/ HTTP/1.1" 404 1740
+"GET /static/swagger/ HTTP/1.1" 404 1740
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3321
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"POST /api/v1/api/v1/notifications/email HTTP/1.1" 404 2404
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /api/v1/api/v1/notifications/email HTTP/1.1" 404 2583
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/favicon-16x16.png HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"POST /api/v1/api/v1/notifications/email HTTP/1.1" 404 2583
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3307
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"POST /api/v1/notifications/email HTTP/1.1" 500 67578
+"GET / HTTP/1.1" 404 2465
+"GET /favicon.ico HTTP/1.1" 404 2516
+"GET / HTTP/1.1" 404 2337
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"POST /api/v1/notifications/email HTTP/1.1" 500 67578
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3309
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/ HTTP/1.1" 404 1639
+"GET /static/swagger/ HTTP/1.1" 404 1639
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger.json HTTP/1.1" 404 1649
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger.json HTTP/1.1" 404 1649
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3476
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/favicon-16x16.png HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3501
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3501
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3545
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3545
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 97675
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3515
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3665
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3746
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3743
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 98026
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 98135
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 98135
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 187
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3741
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 187
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 187
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 187
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 19524
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 19524
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 19246
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 75
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 76
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 63
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3747
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 104
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 63
+"POST /api/v1/notifications/email/ HTTP/1.1" 201 52
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3803
+"POST /api/v1/notifications/sms/ HTTP/1.1" 400 69
+"POST /api/v1/notifications/sms/ HTTP/1.1" 201 52
+"POST /api/v1/notifications/sms/ HTTP/1.1" 500 19019
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 0
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 81
+"POST /api/v1/notifications/sms/ HTTP/1.1" 201 52
+"POST /api/v1/notifications/sms/ HTTP/1.1" 500 19019
+"POST /api/v1/notifications/sms/ HTTP/1.1" 201 52
+"POST /api/v1/notifications/sms/ HTTP/1.1" 500 19019
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 81
+"POST /api/v1/notifications/sms/ HTTP/1.1" 400 80
+"GET /api/v1/notifications/sms/ HTTP/1.1" 405 5329
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1132
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 2876
+"GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+"GET /favicon.ico HTTP/1.1" 404 2388
+"OPTIONS /api/v1/notifications/sms/ HTTP/1.1" 200 5648
+"POST /api/v1/notifications/sms/ HTTP/1.1" 400 80
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3801
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3792
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"POST /api/v1/notifications/email/ HTTP/1.1" 201 52
+"GET /static/swagger/index.html HTTP/1.1" 200 3467
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 200 3403
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 200 3435
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 200 3466
+"GET /static/swagger/index.html HTTP/1.1" 200 3467
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/index.html HTTP/1.1" 200 3474
+"GET /static/swagger/index.html HTTP/1.1" 200 3500
+"GET /swagger.json HTTP/1.1" 404 2391
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 200 3502
+"GET /static/swagger.json HTTP/1.1" 404 1649
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 200 3499
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 200 3467
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 304 0
+"GET /static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /static/swagger/index.html HTTP/1.1" 200 3467
+"GET /static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /static/swagger/swagger.json HTTP/1.1" 200 3824
+"GET /static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"GET / HTTP/1.1" 404 2335
+"GET /favicon.ico HTTP/1.1" 404 2386
+"GET /static HTTP/1.1" 404 2371
+"GET /email HTTP/1.1" 404 2368
+"GET /email/ HTTP/1.1" 404 2371
+"GET /static/ HTTP/1.1" 404 1623
+"GET / HTTP/1.1" 404 2335
+"GET / HTTP/1.1" 500 63321
+"GET / HTTP/1.1" 500 55347
+"GET / HTTP/1.1" 500 55347
+"GET / HTTP/1.1" 500 55347
+"GET / HTTP/1.1" 500 56850
+"GET / HTTP/1.1" 500 76928
+"GET / HTTP/1.1" 200 43
+"GET / HTTP/1.1" 200 43
+"GET / HTTP/1.1" 200 43
+"GET / HTTP/1.1" 200 43
+"GET / HTTP/1.1" 500 76893
+"GET / HTTP/1.1" 500 76893
+"GET /static HTTP/1.1" 404 2521
+"GET /static/ HTTP/1.1" 404 1623
+"POST /api/v1/notifications/emails/ HTTP/1.1" 404 2438
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /api/v1/notifications/email/ HTTP/1.1" 500 76047
+"POST /api/v1/notifications/api-key/ HTTP/1.1" 405 41
+"PUT /api/v1/notifications/email/ HTTP/1.1" 405 40
+"PUT /api/v1/notifications/api-key/ HTTP/1.1" 400 20
+"PUT /api/v1/notifications/api-key/ HTTP/1.1" 400 20
+"PUT /api/v1/notifications/api-key/ HTTP/1.1" 400 20
+"PUT /api/v1/notifications/api-key/ HTTP/1.1" 400 65
+"PUT /api/v1/notifications/api-key/ HTTP/1.1" 400 65
+"PUT /api/v1/notifications/api-key/ HTTP/1.1" 200 43
+"GET / HTTP/1.1" 404 2335
+"GET /static/index.html HTTP/1.1" 404 1643
+"GET / HTTP/1.1" 404 2335
+"GET /favicon.ico HTTP/1.1" 404 2386
+"GET /swagger HTTP/1.1" 404 2374
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3467
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5396
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2480
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2528
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2527
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2524
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2524
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2525
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2528
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2528
+"GET /notify-gateway/api/v1/notifications/email HTTP/1.1" 404 2524
+"GET /notify-gateway/api/v1/notifications/email HTTP/1.1" 404 2524
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2528
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2527
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 404 2527
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 405 5499
+"GET /notify-gateway/static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+"GET /notify-gateway/static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /notify-gateway/static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /notify-gateway/static/rest_framework/css/default.css HTTP/1.1" 200 1132
+"GET /notify-gateway/static/rest_framework/js/ajax-form.js HTTP/1.1" 200 2876
+"GET /notify-gateway/static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+"GET /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 405 5499
+"GET /notify-gateway/static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+"GET /notify-gateway/static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+"GET /notify-gateway/static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /notify-gateway/static/rest_framework/js/default.js HTTP/1.1" 200 1262
+"GET /notify-gateway/static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3467
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /notify-gateway/static/swagger/swagger-ui.css.map HTTP/1.1" 200 91
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5498
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 2281635
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js.map HTTP/1.1" 200 11295934
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3561
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33780
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337975
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527907
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3561
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337975
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33780
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527907
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5744
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"GET / HTTP/1.1" 404 2380
+"GET / HTTP/1.1" 404 2380
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 200 3467
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 200 33779
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 337963
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 200 1527809
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5515
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 200 445
+"GET /static/swagger/index.html HTTP/1.1" 404 2473
+"GET /favicon.ico HTTP/1.1" 404 2431
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5747
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 51
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 38
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 44
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 74
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 68
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 68
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 68
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 68
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 60
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 60
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 74
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 73
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 73
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 73
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 73
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 73
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 73
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 99
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/favicon-16x16.png HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+"GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+"POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:34:53,909 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+2017-12-19 10:34:54,484 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 10:34:59,800 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:19,355 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:20,286 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:20,969 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:21,672 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 10:35:22,377 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:34:01,514 django.server ERROR    YO
+2017-12-19 11:34:01,545 django.server ERROR    YO
+2017-12-19 11:34:02,499 django.server ERROR    YO
+2017-12-19 11:34:35,482 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+2017-12-19 11:34:35,519 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+2017-12-19 11:34:35,519 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 304 0
+2017-12-19 11:34:35,522 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
+2017-12-19 11:34:35,866 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 6029
+2017-12-19 11:34:36,061 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 11:34:41,521 django.server ERROR    YO
+2017-12-19 11:34:42,737 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:36:04,916 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:37:11,524 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:38:12,345 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:38:23,736 django.server WARNING  "POST /notify-gateway/api/v1/notifications/sms/ HTTP/1.1" 400 63
+2017-12-19 11:40:25,395 django.server WARNING  "POST /notify-gateway/api/v1/notifications/sms/ HTTP/1.1" 400 63
+2017-12-19 11:42:04,269 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 11:43:18,912 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 11:45:01,773 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
+2017-12-19 11:45:02,181 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+2017-12-19 11:45:02,380 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+2017-12-19 11:45:11,392 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 63
+2017-12-19 11:45:43,767 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:46:49,901 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:49:46,671 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:50:40,939 django.server INFO     {'email': ['This field is required.']}
+2017-12-19 11:50:40,940 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:54:10,114 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:54:10,115 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:54:49,254 django.server ERROR    {'detail': 'JSON parse error - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)'}
+2017-12-19 11:54:49,255 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 108
+2017-12-19 11:55:36,871 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 17148
+2017-12-19 11:56:35,593 django.server ERROR    {'detail': 'JSON parse error - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)'}
+2017-12-19 11:56:35,595 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 108
+2017-12-19 11:57:49,390 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:57:49,391 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 11:58:41,896 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:58:41,950 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 15715
+2017-12-19 11:59:02,531 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 11:59:02,533 django.server ERROR    (<class 'IndexError'>, IndexError('list index out of range',), <traceback object at 0x0000000004D1B988>)
+2017-12-19 11:59:02,534 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:00:22,751 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 12:00:22,752 django.server ERROR    (<class 'TypeError'>, TypeError('formatError() takes 1 positional argument but 2 were given',), <traceback object at 0x0000000004D08AC8>)
+2017-12-19 12:00:22,753 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:01:16,400 django.server ERROR    {'email': ['This field is required.']}
+2017-12-19 12:01:16,403 django.server ERROR    (<class 'TypeError'>, TypeError('formatError() takes 1 positional argument but 2 were given',), <traceback object at 0x0000000004D2AC88>)
+2017-12-19 12:01:16,407 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:01:39,648 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 12:01:46,206 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:03:03,802 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16907
+2017-12-19 12:04:00,238 django.server ERROR    (<class 'notifications_python_client.errors.HTTPError'>, HTTPError(<Response [400]>,), <traceback object at 0x0000000004D2B808>)
+2017-12-19 12:04:00,240 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:05:57,714 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16859
+2017-12-19 12:06:30,955 django.server ERROR    Traceback (most recent call last):
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\base.py", line 86, in request
+    response.raise_for_status()
+  File "C:\Python 3.5\lib\site-packages\requests\models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\stylesm\Desktop\test\OFS-MORE-Beta-Secured\source\notify\application\views.py", line 38, in send_email
+    return send_email_via_notify(serializer.data)
+  File "C:\Users\stylesm\Desktop\test\OFS-MORE-Beta-Secured\source\notify\application\views.py", line 83, in send_email_via_notify
+    email_reply_to_id=None)
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\notifications.py", line 58, in send_email_notification
+    data=notification)
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\base.py", line 52, in post
+    return self.request("POST", url, data=data)
+  File "C:\Python 3.5\lib\site-packages\notifications_python_client\base.py", line 97, in request
+    raise api_error
+notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]
+
+2017-12-19 12:06:30,957 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:11:59,969 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 87, in send_email_via_notify', '    personalisation=personalisation,', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:11:59,970 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:13:08,449 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:13:08,450 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:15:40,681 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]
+2017-12-19 12:15:40,683 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:16:17,023 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16909
+2017-12-19 12:16:53,932 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16909
+2017-12-19 12:17:05,892 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]
+2017-12-19 12:17:05,894 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:17:30,941 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()']
+2017-12-19 12:17:30,945 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:17:59,087 django.server ERROR    [[]]
+2017-12-19 12:17:59,088 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:18:22,792 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']]
+2017-12-19 12:18:22,793 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:19:01,008 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:19:01,012 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:19:06,864 django.server ERROR    ["notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]", '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error']
+2017-12-19 12:19:06,865 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:20:05,435 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:20:05,436 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:20:47,261 django.server ERROR    [['Traceback (most recent call last):', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 86, in request', '    response.raise_for_status()', '  File "C:\\Python 3.5\\lib\\site-packages\\requests\\models.py", line 935, in raise_for_status', '    raise HTTPError(http_error_msg, response=self)', 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.notifications.service.gov.uk/v2/notifications/email', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 38, in send_email', '    return send_email_via_notify(serializer.data)', '  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 89, in send_email_via_notify', '    email_reply_to_id=None)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\notifications.py", line 58, in send_email_notification', '    data=notification)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 52, in post', '    return self.request("POST", url, data=data)', '  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:20:47,262 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:22:22,596 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:22:22,597 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:23:28,456 django.server ERROR    [['NoneType']]
+2017-12-19 12:23:28,457 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 12:27:42,936 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:27:42,937 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:29:40,003 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:29:40,004 django.server ERROR    None
+2017-12-19 12:29:40,005 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:30:17,938 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:30:17,939 django.server ERROR    None
+2017-12-19 12:30:17,943 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:32:15,328 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:32:15,423 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16879
+2017-12-19 12:33:11,459 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError', 'message': 'email_address Not a valid email address'}]"]]
+2017-12-19 12:33:11,532 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 16882
+2017-12-19 12:34:27,354 django.server ERROR    [['  File "C:\\Python 3.5\\lib\\site-packages\\notifications_python_client\\base.py", line 97, in request', '    raise api_error', "notifications_python_client.errors.HTTPError: 400 - [{'message': 'email_address Not a valid email address', 'error': 'ValidationError'}]"]]
+2017-12-19 12:34:27,355 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 84
+2017-12-19 12:35:01,856 django.server ERROR    [['  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 39, in send_email', '    log.error(err[0] + err[1])', "UnboundLocalError: local variable 'err' referenced before assignment"]]
+2017-12-19 12:35:01,859 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:35:51,640 django.server ERROR    [['  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 39, in send_email', '    log.error("Django serialization error: " +err[0] + err[1])', "UnboundLocalError: local variable 'err' referenced before assignment"]]
+2017-12-19 12:35:51,641 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:35:56,841 django.server ERROR    [['  File "C:\\Users\\stylesm\\Desktop\\test\\OFS-MORE-Beta-Secured\\source\\notify\\application\\views.py", line 39, in send_email', '    log.error("Django serialization error: " +err[0] + err[1])', "UnboundLocalError: local variable 'err' referenced before assignment"]]
+2017-12-19 12:35:56,843 django.server ERROR    "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 500 2
+2017-12-19 12:36:15,957 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 12:36:15,958 django.server WARNING  "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 400 72
+2017-12-19 12:38:52,198 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 12:38:52,228 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 12:38:53,271 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 12:38:53,283 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 12:38:53,564 django.server ERROR    Django serialization error: 'apiKey' 'This field may not be blank.'
+2017-12-19 12:52:22,381 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 304 0
+2017-12-19 12:52:58,710 django.server INFO     "PUT /notify-gateway/api/v1/notifications/api-key/ HTTP/1.1" 200 43
+2017-12-19 12:53:45,979 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 12:57:29,762 django.server INFO     "PUT /notify-gateway/api/v1/notifications/api-key/ HTTP/1.1" 200 43
+2017-12-19 12:57:35,968 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 12:58:41,884 django.server INFO     "PUT /notify-gateway/api/v1/notifications/api-key/ HTTP/1.1" 200 43
+2017-12-19 12:58:46,116 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 13:08:40,671 django.server INFO     "PUT /notify-gateway/api/v1/notifications/api-key/ HTTP/1.1" 200 43
+2017-12-19 13:08:46,853 django.server INFO     "POST /notify-gateway/api/v1/notifications/email/ HTTP/1.1" 201 90
+2017-12-19 13:12:31,000 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 13:12:31,051 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 13:12:31,996 django.server ERROR    Django serialization error: 'email' 'This field is required.'
+2017-12-19 13:12:32,049 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
+2017-12-19 13:12:32,237 django.server ERROR    Django serialization error: 'apiKey' 'This field may not be blank.'
+2017-12-19 13:27:41,455 django.server WARNING  "GET / HTTP/1.1" 404 2380
+2017-12-19 13:27:43,351 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5639
