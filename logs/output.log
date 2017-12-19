@@ -899,6 +899,7 @@ notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError'
 2017-12-19 13:12:31,996 django.server ERROR    Django serialization error: 'email' 'This field is required.'
 2017-12-19 13:12:32,049 django.server ERROR    Django serialization error: 'phoneNumber' 'This field is required.'
 2017-12-19 13:12:32,237 django.server ERROR    Django serialization error: 'apiKey' 'This field may not be blank.'
+<<<<<<< HEAD
 2017-12-19 13:27:03,094 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui.css HTTP/1.1" 304 0
 2017-12-19 13:27:03,097 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-bundle.js HTTP/1.1" 304 0
 2017-12-19 13:27:03,098 django.server INFO     "GET /notify-gateway/static/swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
@@ -937,3 +938,7 @@ notifications_python_client.errors.HTTPError: 400 - [{'error': 'ValidationError'
 2017-12-19 13:28:40,654 django.server INFO     "GET /notify-gateway/static/swagger/index.html HTTP/1.1" 304 0
 2017-12-19 13:28:40,928 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5871
 2017-12-19 13:28:41,051 django.server INFO     "GET /notify-gateway/static/swagger/favicon-32x32.png HTTP/1.1" 200 1141
+=======
+2017-12-19 13:27:41,455 django.server WARNING  "GET / HTTP/1.1" 404 2380
+2017-12-19 13:27:43,351 django.server INFO     "GET /notify-gateway/static/swagger/swagger.json HTTP/1.1" 200 5639
+>>>>>>> 4b1f5ae065c99abffd1ca4b163ecf8481566f2b9
