@@ -18,7 +18,8 @@ def change_api_key(request):
             #API key set
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['apiKey'])
             return JsonResponse({"message":"Api key successfully updated"}, status=200)
-        return JsonResponse(serializer.errors, status=400)
+        err = formatError(serializer.errors)
+        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request",}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
@@ -32,7 +33,8 @@ def send_email(request):
         if serializer.is_valid():
             #call method to send email
             return send_email_via_notify(serializer.data)
-        return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        err = formatError(serializer.errors)
+        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request",}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
@@ -46,7 +48,8 @@ def send_sms(request):
         serializer = SmsSerializer(data=request.data)
         if serializer.is_valid():
             return send_sms_via_notify(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        err = formatError(serializer.errors)
+        return JsonResponse({"message": err[0] + err[1], "error":"Bad Request",}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
@@ -99,3 +102,11 @@ def send_sms_via_notify(data):
     )
 
     return JsonResponse({"notifyId": response['id'],"message":"SMS sent successfully"}, status=201)
+def formatError(ex):
+    #Formatting default Django error messages
+    err = str(ex).split(":",1)
+    err[0] = err[0].strip('{')
+    err[1] = err[1].strip('}')
+    err[1] = err[1].replace('[','')
+    err[1] = err[1].replace(']','')
+    return err
