@@ -1,0 +1,265 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "A RESTful web service, enabling integration with worldpay.",
+    "version": "v1",
+    "title": "Payment Gateway"
+  },
+  "basePath": "/payment-gateway/api/v1",
+  "tags": [
+    {
+      "name": "worldpay",
+      "description": "Operations available for dispatching notifications via the GOV.UK Notify platform."
+    }
+  ],
+  "paths": {
+    "/worldpay/sendOrder/": {
+      "post": {
+        "tags": [
+          "worldpay"
+        ],
+        "summary": "Sends all the neccessary billing details to WorldPay",
+        "operationId": "email",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Send Order Request",
+            "description": "WorldPay place order request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SendOrderRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Order created",
+          },
+          "400": {
+            "description": "Something was wrong with the request, e.g. invalid JSON or token"
+          },
+          "401": {
+            "description": "Something was wrong with authentication, e.g. invalid key"
+          },
+          "404": {
+            "description": "The requested item was not found, e.g. invalid token"
+          },
+          "405": {
+            "description": "The endpoint does not support the requested method"
+          },
+          "415": {
+            "description": "Unsupported media type defined in the HTTP header"
+          },
+          "500": {
+             "description": "Server error"
+          }
+        }
+      }
+    },
+    "/worldpay/getOrder/": {
+      "get": {
+        "tags": [
+          "worldpay"
+        ],
+        "summary": "Sends an SMS via GOV.UK Notify",
+        "operationId": "sms",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "SendSmsRequest",
+            "description": "SMS notification request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SendSmsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Notification created",
+            "schema": {
+              "$ref": "#/definitions/NotificationCreationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+             "description": "Server error"
+          }
+        }
+      }
+    },
+    "/worldpay/api-key/" : {
+      "put": {
+        "tags": [
+          "worldpay"
+        ],
+        "summary": "Sets the GOV.UK Notify API key used by this service",
+        "operationId": "apiKey",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "UpdateApiKeyRequest",
+            "description": "GOV.UK Notify API key",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateApiKeyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "API Key updated",
+            "schema": {
+              "$ref": "#/definitions/ApiKeyUpdateResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+             "description": "Server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SendOrderRequest": {
+      "type": "object",
+      "required": [
+        "name",
+        "expiryMonth"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "recipient@email.com"
+        },
+        "expiryMonth": {
+          "type": "string",
+          "format": "uuid",
+          "example": "e6d76c78-5a3d-4808-8389-359cda72d38a"
+        },
+        "expiryYear": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "cardNumber": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "type": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "cvc": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "amount": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "currencyCode": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "orderDescription": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "settlementCurrency": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        },
+        "name2": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        }
+      }
+    },
+    "SendSmsRequest": {
+      "type": "object",
+      "required": [
+        "phoneNumber",
+        "templateId"
+      ],
+      "properties": {
+        "phoneNumber": {
+          "type": "string",
+          "example": "07791619518"
+        },
+        "templateId": {
+          "type": "string",
+          "format": "uuid",
+          "example": "e6d76c78-5a3d-4808-8389-359cda72d38a"
+        },
+        "personalisation": {
+          "type": "object",
+      "example": {
+            "full_name": "Ms Test Recipient"
+          }
+        },
+        "reference": {
+          "type": "string",
+          "example": "custom-reference-identifier"
+        }
+      }
+    },
+    "UpdateApiKeyRequest": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "example": "dev_api-7c51af0f-8720-4315-8u67-b4f94d7531e0-df9b0c2e-6h50-4102-ae62-9a24cde656ce"
+        }
+      }
+    },
+    "NotificationCreationResponse": {
+      "type": "object",
+      "required": [
+        "notifyId"
+      ],
+      "properties": {
+        "notifyId": {
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    },
+    "ApiKeyUpdateResponse": {
+      "type": "object",
+      "required": [
+        "message"
+      ],
+      "properties": {
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
