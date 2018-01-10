@@ -1,20 +1,21 @@
-from rest_framework import serializers
 from application.models import EmailNotificationRequest, SmsNotificationRequest, Key
+from rest_framework import serializers
 
-#Serializers read request data and validate it against the respective model
+
+# Serializers read request data and validate it against the respective model
 class EmailSerializer(serializers.ModelSerializer):
     class Meta:
         model = EmailNotificationRequest
-        fields = ('email', 'templateId', 'personalisation', 'reference')
+        fields = ('email', 'template_id', 'personalisation', 'reference')
 
 
 class SmsSerializer(serializers.ModelSerializer):
     class Meta:
         model = SmsNotificationRequest
-        fields = ('phoneNumber', 'templateId', 'personalisation', 'reference')
+        fields = ('phone_number', 'template_id', 'personalisation', 'reference')
 
 
 class NotifySerializer(serializers.ModelSerializer):
     class Meta:
         model = Key
-        fields = ('apiKey', 'name')
+        fields = ('api_key', 'name')

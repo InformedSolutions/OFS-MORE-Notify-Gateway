@@ -3,9 +3,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'fwzyivx(xxab@bz6g6!v&&qv69mcv^za-vrh@nj5k!61((2aof'
 
@@ -15,8 +12,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [],
     # Parser classes priority-wise for Swagger
     'DEFAULT_PARSER_CLASSES': [
@@ -67,14 +62,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'notify.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+# No database is needed for the Notify Gateway
+DATABASES = {}
 
-#No database is needed for the Notify Gateway
-DATABASES = { }
-
-# Password validation
-# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -91,8 +81,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/2.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -104,7 +92,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 STATIC_URL = '/notify-gateway/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
@@ -112,42 +99,40 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
-
-#Output all logs to /logs directory
+# Output all logs to /logs directory
 LOGGING = {
-  'version': 1,
-  'disable_existing_loggers': False,
-  'formatters': {
-'console': {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'console': {
             # exact format is not important, this is the minimum information
             'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
         },
-        },
-  'handlers': {
-    'django.server': {
-        'level': 'INFO',
-        'class': 'logging.handlers.RotatingFileHandler',
-        'maxBytes': 1 * 1024 * 1024,
-        'filename': 'logs/output.log',
-        'formatter': 'console',
-        'maxBytes': 1 * 1024 * 1024,
-        'backupCount': '30'
     },
-   },
-   'loggers': {
-     'django.server': {
-       'handlers': ['django.server'],
-         'level': 'INFO',
-           'propagate': True,
-      },
+    'handlers': {
+        'django.server': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'maxBytes': 1 * 1024 * 1024,
+            'filename': 'logs/output.log',
+            'formatter': 'console',
+            'maxBytes': 1 * 1024 * 1024,
+            'backupCount': '30'
+        },
+    },
+    'loggers': {
+        'django.server': {
+            'handlers': ['django.server'],
+            'level': 'INFO',
+            'propagate': True,
+        },
     },
 }
 
-#Notify API Test Key
-NOTIFY_API_KEY="test_key-7c51af0f-8720-4315-9d67-b4f94d7531e0-6ebc794f-f0d9-40c6-bd4f-013119b47c04"
+# Notify API Test Key
+NOTIFY_API_KEY = "test_key-7c51af0f-8720-4315-9d67-b4f94d7531e0-6ebc794f-f0d9-40c6-bd4f-013119b47c04"
 
-#Test outputs
+# Test outputs
 TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
 TEST_OUTPUT_VERBOSE = True
 TEST_OUTPUT_DESCRIPTIONS = True
