@@ -24,7 +24,7 @@ def change_api_key(request):
         if serializer.is_valid():
             # API key set
             global NOTIFICATIONS_CLIENT
-            NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['apiKey'])
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['api_key'])
             return JsonResponse({"message": "Api key successfully updated"}, status=200)
         err = formatError(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
@@ -89,7 +89,7 @@ def send_sms(request):
 def send_email_via_notify(data):
     # Read serialized email info
     email = data['email']
-    template_id = data['templateId']
+    template_id = data['template_id']
     if 'reference' in data:
         reference = data['reference']
     else:
@@ -111,8 +111,8 @@ def send_email_via_notify(data):
 
 def send_sms_via_notify(data):
     # Read serialized SMS Info
-    phone_number = data['phoneNumber']
-    template_id = data['templateId']
+    phone_number = data['phone_number']
+    template_id = data['template_id']
 
     if 'reference' in data:
         reference = data['reference']
