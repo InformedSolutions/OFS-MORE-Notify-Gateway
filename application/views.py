@@ -26,7 +26,7 @@ def change_api_key(request):
             global NOTIFICATIONS_CLIENT
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['api_key'])
             return JsonResponse({"message": "Api key successfully updated"}, status=200)
-        err = formatError(serializer.errors)
+        err = format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request", }, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
@@ -49,7 +49,7 @@ def send_email(request):
         if serializer.is_valid():
             # call method to send email
             return send_email_via_notify(serializer.data)
-        err = formatError(serializer.errors)
+        err = format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
@@ -71,7 +71,7 @@ def send_sms(request):
         serializer = SmsSerializer(data=request.data)
         if serializer.is_valid():
             return send_sms_via_notify(serializer.data)
-        err = formatError(serializer.errors)
+        err = format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
@@ -134,7 +134,7 @@ def send_sms_via_notify(data):
     return JsonResponse({"notifyId": response['id'], "message": "SMS sent successfully"}, status=201)
 
 
-def formatError(ex):
+def format_error(ex):
     # Formatting default Django error messages
     err = str(ex).split(":", 1)
     err[0] = err[0].strip('{')
