@@ -95,6 +95,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+URL_PREFIX = '/notify-gateway'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Output all logs to /logs directory
