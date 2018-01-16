@@ -159,7 +159,7 @@
         "personalisation": {
           "type": "object",
           "example": {
-            "full_name": "Ms Test Recipient"
+            "full name": "Ms Test Recipient"
           }
         },
         "reference": {
@@ -187,7 +187,7 @@
         "personalisation": {
           "type": "object",
 		  "example": {
-            "full_name": "Ms Test Recipient"
+            "full name": "Ms Test Recipient"
           }
         },
         "reference": {
