@@ -29,7 +29,7 @@ class SmsNotificationRequest(models.Model):
     personalisation = JSONField(blank=True)
 
 
-class Key(models.Model):
+class ApiKey(models.Model):
     """
     This is where the notify-gateway validation rules are set for api-key update requests
     """

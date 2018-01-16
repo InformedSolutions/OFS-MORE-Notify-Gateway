@@ -1,3 +1,4 @@
+
 {
   "swagger": "2.0",
   "info": {
@@ -11,10 +12,10 @@
       "name": "notifications",
       "description": "Operations available for dispatching notifications via the GOV.UK Notify platform."
     },
-    {
-      "name": "configuration",
-      "description": "Operations available for configuring settings used by this API."
-    }
+	{
+	  "name": "configuration",
+	  "description": "Operations available for configuring settings used by this API."
+	}
   ],
   "paths": {
     "/notifications/email/": {
@@ -52,7 +53,7 @@
             "description": "Bad request"
           },
           "500": {
-            "description": "Server error"
+             "description": "Server error"
           }
         }
       }
@@ -92,12 +93,12 @@
             "description": "Bad request"
           },
           "500": {
-            "description": "Server error"
+             "description": "Server error"
           }
         }
       }
     },
-    "/notifications/api-key/": {
+    "/notifications/api-key/" : {
       "put": {
         "tags": [
           "configuration"
@@ -130,9 +131,9 @@
           },
           "400": {
             "description": "Bad request"
-          },
+			},
           "500": {
-            "description": "Server error"
+             "description": "Server error"
           }
         }
       }
@@ -143,14 +144,14 @@
       "type": "object",
       "required": [
         "email",
-        "template_id"
+        "templateId"
       ],
       "properties": {
         "email": {
           "type": "string",
           "example": "recipient@email.com"
         },
-        "template_id": {
+        "templateId": {
           "type": "string",
           "format": "uuid",
           "example": "e6d76c78-5a3d-4808-8389-359cda72d38a"
@@ -170,22 +171,22 @@
     "SendSmsRequest": {
       "type": "object",
       "required": [
-        "phone_number",
-        "template_id"
+        "phoneNumber",
+        "templateId"
       ],
       "properties": {
-        "phone_number": {
+        "phoneNumber": {
           "type": "string",
           "example": "07791619518"
         },
-        "template_id": {
+        "templateId": {
           "type": "string",
           "format": "uuid",
           "example": "e6d76c78-5a3d-4808-8389-359cda72d38a"
         },
         "personalisation": {
           "type": "object",
-          "example": {
+		  "example": {
             "full_name": "Ms Test Recipient"
           }
         },
@@ -198,10 +199,10 @@
     "UpdateApiKeyRequest": {
       "type": "object",
       "required": [
-        "api_key"
+        "apiKey"
       ],
       "properties": {
-        "api_key": {
+        "apiKey": {
           "type": "string",
           "example": "dev_api-7c51af0f-8720-4315-8u67-b4f94d7531e0-df9b0c2e-6h50-4102-ae62-9a24cde656ce"
         }
@@ -211,13 +212,13 @@
       "type": "object",
       "required": [
         "notifyId",
-        "message"
+		"message"
       ],
       "properties": {
-        "message": {
-          "type": "string",
-          "example": "Email sent successfully"
-        },
+ 		"message": {
+		  "type": "string",
+		  "example": "Email sent successfully"
+		},
         "notifyId": {
           "type": "string",
           "format": "uuid"

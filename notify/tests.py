@@ -1,6 +1,7 @@
 import json
 import unittest
 
+from django.conf import settings
 from django.test import Client
 from rest_framework.test import APIClient
 
@@ -11,13 +12,13 @@ class TestApi(unittest.TestCase):
 
     def test_base_url(self):
         # Test base swagger visibility
-        response = self.client.get('/')
-        # self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.client = Client()
+        response = self.client.get(settings.URL_PREFIX + '/')
 
     def test_swagger_url(self):
         # Test swagger endpoint
-        response = self.client.get('/#!/default/email')
-        # self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.client = Client()
+        response = self.client.get(settings.URL_PREFIX + '/#!/default/email')
 
     def test_set_api_key(self):
         # Test updating the APi Key
@@ -26,7 +27,7 @@ class TestApi(unittest.TestCase):
         input = {
             "api_key": "dev_api-7c51af0f-8720-4315-9d67-b4f94d7531e0-df9b0c2e-6d50-4102-ae62-9a24cde656cc"
         }
-        response = self.client.put('/notify-gateway/api/v1/notifications/api-key/', json.dumps(input),
+        response = self.client.put(settings.URL_PREFIX + '/api/v1/notifications/api-key/', json.dumps(input),
                                    'application/json', header=header)
         self.assertEqual(response.status_code, 200)
 
@@ -37,7 +38,7 @@ class TestApi(unittest.TestCase):
         input = {
             "api_key": ""
         }
-        response = self.client.put('/notify-gateway/api/v1/notifications/api-key/', json.dumps(input),
+        response = self.client.put(settings.URL_PREFIX + '/api/v1/notifications/api-key/', json.dumps(input),
                                    'application/json', header=header)
         # This test is meant to fail
         self.assertEqual(response.status_code, 400)
@@ -52,7 +53,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "template_id": "f33517ff-2a88-4f6e-b855-c550268ce08a"
         }
-        response = self.client.post('/notify-gateway/api/v1/notifications/email/', json.dumps(input),
+        response = self.client.post(settings.URL_PREFIX + '/api/v1/notifications/email/', json.dumps(input),
                                     'application/json', header=header)
         self.assertEqual(response.status_code, 400)
 
@@ -66,7 +67,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "template_id": "a741fed2-7948-4b1a-b44a-fec8485ec700"
         }
-        response = self.client.post('/notify-gateway/api/v1/notifications/email/', json.dumps(input),
+        response = self.client.post(settings.URL_PREFIX + '/api/v1/notifications/email/', json.dumps(input),
                                     'application/json')
         self.assertEqual(response.status_code, 400)
 
@@ -81,7 +82,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "template_id": "a741fed2-7948-4b1a-b44a-fec8485ec700"
         }
-        response = self.client.post('/notify-gateway/api/v1/notifications/email/', json.dumps(input),
+        response = self.client.post(settings.URL_PREFIX + '/api/v1/notifications/email/', json.dumps(input),
                                     'application/json')
         self.assertEqual(response.status_code, 201)
 
@@ -97,7 +98,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "templateId": "b2f0171a-774e-47bc-b7ef-5328758447c4"
         }
-        response = self.client.post('/notify-gateway/api/v1/notifications/sms/', json.dumps(input), 'application/json',
+        response = self.client.post(settings.URL_PREFIX + '/api/v1/notifications/sms/', json.dumps(input), 'application/json',
                                     header=header)
         self.assertEqual(response.status_code, 201)
 
@@ -112,7 +113,7 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "template_id": "a741fed2-7948-4b1a-b44a-fec8485ec700"
         }
-        response = self.client.post('/notify-gateway/api/v1/notifications/sms/', json.dumps(input), 'application/json')
+        response = self.client.post(settings.URL_PREFIX + '/api/v1/notifications/sms/', json.dumps(input), 'application/json')
         self.assertEqual(response.status_code, 400)
 
     def test_PostMissingSMSReq(self):
@@ -126,6 +127,6 @@ class TestApi(unittest.TestCase):
             "reference": "string",
             "template_id": "b2f0171a-774e-47bc-b7ef-5328758447c4"
         }
-        response = self.client.post('/notify-gateway/api/v1/notifications/sms/', json.dumps(input), 'application/json',
+        response = self.client.post(settings.URL_PREFIX + '/api/v1/notifications/sms/', json.dumps(input), 'application/json',
                                     header=header)
         self.assertEqual(response.status_code, 400)

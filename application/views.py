@@ -15,6 +15,7 @@ from notifications_python_client.notifications import NotificationsAPIClient
 from rest_framework import status
 from rest_framework.decorators import api_view
 
+from .utilities import Utilities
 from .serializers import EmailSerializer, NotifySerializer, SmsSerializer
 
 # Initiate logger
@@ -33,13 +34,14 @@ def change_api_key(request):
     """
     # This method is for updating the API key
     try:
-        serializer = NotifySerializer(data=request.data)
+        mapped_json_request = Utilities.convert_json_to_python_object(request.data)
+        serializer = NotifySerializer(data=mapped_json_request)
         if serializer.is_valid():
             # API key set
             global NOTIFICATIONS_CLIENT
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['api_key'])
             return JsonResponse({"message": "Api key successfully updated"}, status=200)
-        err = format_error(serializer.errors)
+        err = __format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request", }, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
@@ -62,11 +64,12 @@ def send_email(request):
     :return: A JsonResponse with the status code and message
     """
     try:
-        serializer = EmailSerializer(data=request.data)
+        mapped_json_request = Utilities.convert_json_to_python_object(request.data)
+        serializer = EmailSerializer(data=mapped_json_request)
         if serializer.is_valid():
             # call method to send email
-            return send_email_via_notify(serializer.data)
-        err = format_error(serializer.errors)
+            return __send_email_via_notify(serializer.data)
+        err = __format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
@@ -89,10 +92,11 @@ def send_sms(request):
     :return: A JsonResponse with the status code and message
     """
     try:
-        serializer = SmsSerializer(data=request.data)
+        mapped_json_request = Utilities.convert_json_to_python_object(request.data)
+        serializer = SmsSerializer(data=mapped_json_request)
         if serializer.is_valid():
-            return send_sms_via_notify(serializer.data)
-        err = format_error(serializer.errors)
+            return __send_sms_via_notify(serializer.data)
+        err = __format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
@@ -107,7 +111,7 @@ def send_sms(request):
         return JsonResponse(ex.__dict__, status=500)
 
 
-def send_email_via_notify(data):
+def __send_email_via_notify(data):
     """
     This method actually makes the post request to the Notify endpoint
     :param data: All of the necessary parameters for a successful SMS Notify request are passed in via the request
@@ -135,7 +139,7 @@ def send_email_via_notify(data):
     return JsonResponse({"notifyId": response['id'], "message": "Email sent successfully"}, status=201)
 
 
-def send_sms_via_notify(data):
+def __send_sms_via_notify(data):
     """
     This method actually makes the post request to the Notify endpoint
     :param data: All of the necessary parameters for a successful SMS Notify request are passed in via the request
@@ -165,7 +169,7 @@ def send_sms_via_notify(data):
     return JsonResponse({"notifyId": response['id'], "message": "SMS sent successfully"}, status=201)
 
 
-def format_error(ex):
+def __format_error(ex):
     """
     This to format errors so that they are human-readable
     :param ex: Serializer exception

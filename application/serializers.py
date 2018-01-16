@@ -7,7 +7,7 @@ OFS-MORE-CCN3: Apply to be a Childminder Beta
 
 from rest_framework import serializers
 
-from .models import EmailNotificationRequest, Key, SmsNotificationRequest
+from .models import EmailNotificationRequest, ApiKey, SmsNotificationRequest
 
 
 # Serializers read request data and validate it against the respective model
@@ -39,5 +39,5 @@ class NotifySerializer(serializers.ModelSerializer):
     """
 
     class Meta:
-        model = Key
+        model = ApiKey
         fields = ('api_key',)
