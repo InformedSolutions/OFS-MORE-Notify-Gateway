@@ -1,13 +1,21 @@
+"""
+OFS-MORE-CCN3: Apply to be a Childminder Beta
+-- serializers.py --
+
+@author: Informed Solutions
+"""
+
 import logging
 import traceback
-from application.serializers import EmailSerializer, SmsSerializer, NotifySerializer
+
 from django.conf import settings
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 from notifications_python_client.errors import HTTPError
 from notifications_python_client.notifications import NotificationsAPIClient
 from rest_framework import status
 from rest_framework.decorators import api_view
-from rest_framework.response import Response
+
+from .serializers import EmailSerializer, NotifySerializer, SmsSerializer
 
 # Initiate logger
 log = logging.getLogger('django.server')
@@ -18,6 +26,11 @@ NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
 
 @api_view(['PUT'])
 def change_api_key(request):
+    """
+    This method is used to update the notify api key
+    :param request: The api key is the only parameter passed in via the request
+    :return: A JsonResponse with the status code, and a message
+    """
     # This method is for updating the API key
     try:
         serializer = NotifySerializer(data=request.data)
@@ -30,9 +43,9 @@ def change_api_key(request):
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request", }, status=status.HTTP_400_BAD_REQUEST)
     except HTTPError as ex:
-        exceptiondata = traceback.format_exc().splitlines()
-        exceptionarray = [exceptiondata[-3:]]
-        log.error(exceptionarray)
+        exception_data = traceback.format_exc().splitlines()
+        exception_array = [exception_data[-3:]]
+        log.error(exception_array)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
     except Exception as ex:
         exceptiondata = traceback.format_exc().splitlines()
@@ -43,7 +56,11 @@ def change_api_key(request):
 
 @api_view(['POST'])
 def send_email(request):
-    # This method handles the send Email requests and responses
+    """
+    This method handles the send Email requests and responses
+    :param request: All of the necessary parameters for a successful email Notify request are passed in via the request
+    :return: A JsonResponse with the status code and message
+    """
     try:
         serializer = EmailSerializer(data=request.data)
         if serializer.is_valid():
@@ -66,7 +83,11 @@ def send_email(request):
 
 @api_view(['POST'])
 def send_sms(request):
-    # This method handles the send SMS request and responses
+    """
+    This method handles the send SMS request and responses, and validates them.
+    :param request: All of the necessary parameters for a successful SMS Notify request are passed in via the request
+    :return: A JsonResponse with the status code and message
+    """
     try:
         serializer = SmsSerializer(data=request.data)
         if serializer.is_valid():
@@ -87,6 +108,11 @@ def send_sms(request):
 
 
 def send_email_via_notify(data):
+    """
+    This method actually makes the post request to the Notify endpoint
+    :param data: All of the necessary parameters for a successful SMS Notify request are passed in via the request
+    :return: The a 201 and the notify id if the request to Notify is successful
+    """
     # Read serialized email info
     email = data['email']
     template_id = data['template_id']
@@ -110,6 +136,11 @@ def send_email_via_notify(data):
 
 
 def send_sms_via_notify(data):
+    """
+    This method actually makes the post request to the Notify endpoint
+    :param data: All of the necessary parameters for a successful SMS Notify request are passed in via the request
+    :return: The a 201 and the notify id if the request to Notify is successful
+    """
     # Read serialized SMS Info
     phone_number = data['phone_number']
     template_id = data['template_id']
@@ -135,6 +166,11 @@ def send_sms_via_notify(data):
 
 
 def format_error(ex):
+    """
+    This to format errors so that they are human-readable
+    :param ex: Serializer exception
+    :return: formatted error message
+    """
     # Formatting default Django error messages
     err = str(ex).split(":", 1)
     err[0] = err[0].strip('{')

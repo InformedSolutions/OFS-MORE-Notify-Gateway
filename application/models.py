@@ -1,9 +1,18 @@
+"""
+OFS-MORE-CCN3: Apply to be a Childminder Beta
+-- models.py --
+
+@author: Informed Solutions
+"""
+
 from django.contrib.postgres.fields.jsonb import JSONField
 from django.db import models
 
 
 class EmailNotificationRequest(models.Model):
-    # Email Data validation rules
+    """
+    This is where the notify-gateway validation rules are set for email requests
+    """
     email = models.CharField(max_length=100, blank=False)
     template_id = models.UUIDField(blank=False)
     reference = models.CharField(max_length=100, blank=True, default='')
@@ -11,7 +20,9 @@ class EmailNotificationRequest(models.Model):
 
 
 class SmsNotificationRequest(models.Model):
-    # Phone Number validation rules
+    """
+    This is where the notify-gateway validation rules are set for sms requests
+    """
     phone_number = models.CharField(max_length=11, blank=False)
     template_id = models.UUIDField(blank=False)
     reference = models.CharField(max_length=100, blank=True, default='')
@@ -19,7 +30,7 @@ class SmsNotificationRequest(models.Model):
 
 
 class Key(models.Model):
-    # API key validation rules
-    # Name is a placeholder as there needs to be more than one entry to execute without error
-    name = models.CharField(max_length=100, blank=True)
+    """
+    This is where the notify-gateway validation rules are set for api-key update requests
+    """
     api_key = models.CharField(max_length=100, blank=False)

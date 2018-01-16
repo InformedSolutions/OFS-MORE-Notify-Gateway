@@ -1,3 +1,10 @@
+"""
+OFS-MORE-CCN3: Apply to be a Childminder Beta
+-- settings.py --
+
+@author: Informed Solutions
+"""
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

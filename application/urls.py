@@ -1,9 +1,18 @@
+"""
+OFS-MORE-CCN3: Apply to be a Childminder Beta
+-- urls.py --
+
+@author: Informed Solutions
+"""
+
 import re
-from application.views import send_email, send_sms, change_api_key
-from django.conf.urls import url
 
 from django.conf import settings
+from django.conf.urls import url
 
+from .views import change_api_key, send_email, send_sms
+
+# Configure URL's here
 urlpatterns = [
     # Send Email URL
     url(r'^api/v1/notifications/email/$', send_email),
@@ -13,6 +22,7 @@ urlpatterns = [
     url(r'^api/v1/notifications/api-key/$', change_api_key),
 ]
 
+# Set the URL prefix - currently it's notify-gateway
 if settings.URL_PREFIX:
     prefixed_url_pattern = []
     for pat in urlpatterns:
