@@ -2,12 +2,11 @@ import logging
 import traceback
 from application.serializers import EmailSerializer, SmsSerializer, NotifySerializer
 from django.conf import settings
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 from notifications_python_client.errors import HTTPError
 from notifications_python_client.notifications import NotificationsAPIClient
 from rest_framework import status
 from rest_framework.decorators import api_view
-from rest_framework.response import Response
 
 # Initiate logger
 log = logging.getLogger('django.server')
