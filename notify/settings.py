@@ -20,7 +20,7 @@ ALLOWED_HOSTS = ['*']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [],
-    # Parser classes priority-wise for Swagger
+	'DEFAULT_AUTHENTICATION_CLASSES': [],
     'DEFAULT_PARSER_CLASSES': [
         'rest_framework.parsers.FormParser',
         'rest_framework.parsers.MultiPartParser',
@@ -70,7 +70,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'notify.wsgi.application'
 
 # No database is needed for the Notify Gateway
-DATABASES = {}
+DATABASES = { }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -87,7 +87,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
 
 TIME_ZONE = 'UTC'
 
