@@ -7,3 +7,5 @@ PyYAML
 openapi-codec
 unittest-xml-reporting
 requests
+django-debug-toolbar
+whitenoise
