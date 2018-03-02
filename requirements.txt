@@ -9,3 +9,4 @@ unittest-xml-reporting
 requests
 django-debug-toolbar
 whitenoise
+django_extensions
