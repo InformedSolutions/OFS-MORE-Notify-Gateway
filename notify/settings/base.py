@@ -49,9 +49,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-MIDDLEWARE_DEV = [
-]
-
 ROOT_URLCONF = 'notify.urls'
 
 TEMPLATES = [
