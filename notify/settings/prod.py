@@ -20,5 +20,4 @@ MIDDLEWARE = MIDDLEWARE + PROD_MIDDLEWARE
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '-7*y@^vxedq8a^se_q2_r$6)2)64btin&i(!i0rb&sdgf_-rzy'
 
-# Notify API team-scoped key (sends emails to whitelisted team members)
 NOTIFY_API_KEY = os.environ.get('NOTIFY_API_KEY')
