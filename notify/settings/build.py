@@ -15,3 +15,33 @@ INSTALLED_APPS = BUILTIN_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 SECRET_KEY = 'bwf1%fz)rl&i7zb9hd$bkccqw-402hq=mg=h*31(w=@b+iz-8*'
 
 NOTIFY_API_KEY = os.environ.get('NOTIFY_API_KEY')
+
+# Automatic Django logging at the INFO level (i.e everything the comes to the console when ran locally)
+LOGGING = {
+  'version': 1,
+  'disable_existing_loggers': False,
+  'formatters': {
+    'console': {
+            # exact format is not important, this is the minimum information
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+        },
+        },
+  'handlers': {
+    'django.server': {
+        'level': 'INFO',
+        'class': 'logging.handlers.RotatingFileHandler',
+        'maxBytes': 1 * 1024 * 1024,
+        'filename': 'logs/output.log',
+        'formatter': 'console',
+        'maxBytes': 1 * 1024 * 1024,
+        'backupCount': '30'
+    },
+   },
+   'loggers': {
+     'django.server': {
+       'handlers': ['django.server'],
+         'level': 'INFO',
+           'propagate': True,
+      },
+    },
+}
