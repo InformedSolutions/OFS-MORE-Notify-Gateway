@@ -6,6 +6,11 @@ OFS-MORE-CCN3: Apply to be a Childminder Beta
 
 import os
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+NOTIFY_API_KEY = os.environ.get('NOTIFY_API_KEY')
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 

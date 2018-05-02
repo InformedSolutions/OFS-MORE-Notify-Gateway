@@ -1,8 +1,5 @@
 """
-OFS-MORE-CCN3: Apply to be a Childminder Beta
--- serializers.py --
-
-@author: Informed Solutions
+Serializer functions for notify domain models
 """
 
 from rest_framework import serializers

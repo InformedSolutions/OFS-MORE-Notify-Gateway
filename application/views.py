@@ -1,8 +1,5 @@
 """
-OFS-MORE-CCN3: Apply to be a Childminder Beta
--- serializers.py --
-
-@author: Informed Solutions
+View logic for managing notifications API invocations
 """
 
 import logging
