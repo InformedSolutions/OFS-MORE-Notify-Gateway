@@ -7,7 +7,7 @@ To run the GOV.UK Notify Gateway API you must first pull all python dependencies
 
 Once these dependencies have been gathered, you can run the service itself by issuing the command `python manage.py runserver`. After running this command, the GOV.UK Notify Gateway API will be made available (using the default Django port) on http://localhost:8000.
 
-## Supported method
+## Supported methods
 
 For detail of the methods support by this API and how to use them, please see Swagger documentation provided on the path http://localhost:8000/notify-gateway/static/swagger/index.html. Alternatively, you can generate offline documentation for ease of sharing by following the steps outlined below.
 

@@ -1,8 +1,5 @@
 """
-OFS-MORE-CCN3: Apply to be a Childminder Beta
--- models.py --
-
-@author: Informed Solutions
+Model definitions for notify domain models
 """
 
 from django.contrib.postgres.fields.jsonb import JSONField
