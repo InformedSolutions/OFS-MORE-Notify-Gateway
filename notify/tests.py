@@ -77,7 +77,9 @@ class TestApi(unittest.TestCase):
         input = {
             "email": "simulate-delivered@notifications.service.gov.uk",
             "personalisation": {
-                "full name": "Name"
+                "full name": "Name",
+                "firstName": "test",
+                "app_reference": "test"
             },
             "reference": "string",
             "template_id": "a741fed2-7948-4b1a-b44a-fec8485ec700"
