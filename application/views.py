@@ -115,6 +115,11 @@ def __send_email_via_notify(data):
     :return: The a 201 and the notify id if the request to Notify is successful
     """
     # Read serialized email info
+    service_name = data['service_name']
+    # Use Nannies Notify API if a Nannies e-mail needs to be sent
+    if 'service_name' in data:
+        if service_name == 'Nannies':
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API)
     email = data['email']
     template_id = data['template_id']
     if 'reference' in data:
