@@ -10,7 +10,7 @@ import os
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 NOTIFY_API_KEY = os.environ.get('NOTIFY_API_KEY')
-NANNIES_NOTIFY_API = os.environ.get('NANNIES_NOTIFY_API_KEY')
+NANNIES_NOTIFY_API_KEY = os.environ.get('NANNIES_NOTIFY_API_KEY')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
