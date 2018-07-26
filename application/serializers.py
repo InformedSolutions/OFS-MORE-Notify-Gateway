@@ -16,7 +16,7 @@ class EmailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = EmailNotificationRequest
-        fields = ('email', 'template_id', 'personalisation', 'reference')
+        fields = ('service_name', 'email', 'template_id', 'personalisation', 'reference')
 
 
 class SmsSerializer(serializers.ModelSerializer):
