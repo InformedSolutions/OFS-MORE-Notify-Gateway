@@ -152,6 +152,7 @@ def __send_sms_via_notify(data):
     :param data: All of the necessary parameters for a successful SMS Notify request are passed in via the request
     :return: The a 201 and the notify id if the request to Notify is successful
     """
+    global NOTIFICATIONS_CLIENT
     # Read serialized SMS Info
     phone_number = data['phone_number']
     template_id = data['template_id']
