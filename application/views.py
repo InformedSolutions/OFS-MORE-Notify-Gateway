@@ -156,7 +156,8 @@ def __send_sms_via_notify(data):
     # Read serialized SMS Info
     phone_number = data['phone_number']
     template_id = data['template_id']
-
+    # Reset childminder Notify API key
+    NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     if 'reference' in data:
         reference = data['reference']
     else:
