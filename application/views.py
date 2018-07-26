@@ -114,6 +114,7 @@ def __send_email_via_notify(data):
     :param data: All of the necessary parameters for a successful SMS Notify request are passed in via the request
     :return: The a 201 and the notify id if the request to Notify is successful
     """
+    global NOTIFICATIONS_CLIENT
     # Read serialized email info
     # Use Nannies Notify API if a Nannies e-mail needs to be sent
     if 'service_name' in data:
