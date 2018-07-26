@@ -121,6 +121,10 @@ def __send_email_via_notify(data):
         service_name = data['service_name']
         if service_name == 'Nannies':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
+        else:
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
+    else:
+        NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     email = data['email']
     template_id = data['template_id']
     if 'reference' in data:
