@@ -153,11 +153,18 @@ def __send_sms_via_notify(data):
     :return: The a 201 and the notify id if the request to Notify is successful
     """
     global NOTIFICATIONS_CLIENT
+    # Use Nannies Notify API if a Nannies SMS needs to be sent
+    if 'service_name' in data:
+        service_name = data['service_name']
+        if service_name == 'Nannies':
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
+        else:
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
+    else:
+        NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     # Read serialized SMS Info
     phone_number = data['phone_number']
     template_id = data['template_id']
-    # Reset childminder Notify API key
-    NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     if 'reference' in data:
         reference = data['reference']
     else:

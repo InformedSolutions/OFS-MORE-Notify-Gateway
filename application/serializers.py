@@ -27,7 +27,7 @@ class SmsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SmsNotificationRequest
-        fields = ('phone_number', 'template_id', 'personalisation', 'reference')
+        fields = ('service_name', 'phone_number', 'template_id', 'personalisation', 'reference')
 
 
 class NotifySerializer(serializers.ModelSerializer):
