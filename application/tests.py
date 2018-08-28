@@ -20,29 +20,6 @@ class TestApi(unittest.TestCase):
         self.client = Client()
         response = self.client.get(settings.URL_PREFIX + '/#!/default/email')
 
-    def test_set_api_key(self):
-        # Test updating the APi Key
-        self.client = Client()
-        header = {'content-type': 'application/json'}
-        input = {
-            "api_key": "dev_api-7c51af0f-8720-4315-9d67-b4f94d7531e0-df9b0c2e-6d50-4102-ae62-9a24cde656cc"
-        }
-        response = self.client.put(settings.URL_PREFIX + '/api/v1/notifications/api-key/', json.dumps(input),
-                                   'application/json', header=header)
-        self.assertEqual(response.status_code, 200)
-
-    def test_bad_set_api_key(self):
-        # Update the API key, with an empty string
-        self.client = Client()
-        header = {'content-type': 'application/json'}
-        input = {
-            "api_key": ""
-        }
-        response = self.client.put(settings.URL_PREFIX + '/api/v1/notifications/api-key/', json.dumps(input),
-                                   'application/json', header=header)
-        # This test is meant to fail
-        self.assertEqual(response.status_code, 400)
-
     def test_post_bad_email_req(self):
         # test SMS message with invalid phone number (too long)
         self.client = Client()

@@ -22,41 +22,6 @@ log = logging.getLogger('django.server')
 NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
 
 
-@api_view(['PUT'])
-def change_api_key(request):
-    """
-    This method is used to update the notify api key
-    :param request: The api key is the only parameter passed in via the request
-    :return: A JsonResponse with the status code, and a message
-    """
-    # This method is for updating the API key
-    try:
-        mapped_json_request = Utilities.convert_json_to_python_object(request.data)
-        serializer = NotifySerializer(data=mapped_json_request)
-
-        if serializer.is_valid():
-            # API key set
-            global NOTIFICATIONS_CLIENT
-            NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['api_key'])
-            return JsonResponse({"message": "Api key successfully updated"}, status=200)
-
-        err = __format_error(serializer.errors)
-        log.error("Django serialization error: " + err[0] + err[1])
-        return JsonResponse({"message": err[0] + err[1], "error": "Bad Request", }, status=status.HTTP_400_BAD_REQUEST)
-
-    except HTTPError as ex:
-        exception_data = traceback.format_exc().splitlines()
-        exception_array = [exception_data[-3:]]
-        log.error(exception_array)
-        return JsonResponse(ex.message, status=ex.status_code, safe=False)
-
-    except Exception as ex:
-        exception_data = traceback.format_exc().splitlines()
-        exception_array = [exception_data[-3:]]
-        log.error(exception_array)
-        return JsonResponse(ex.__dict__, status=500)
-
-
 @api_view(['POST'])
 def send_email(request):
     """
@@ -130,7 +95,6 @@ def __send_email_via_notify(data):
     global NOTIFICATIONS_CLIENT
 
     # Read serialized email info
-    # Use Nannies Notify API if a Nannies e-mail needs to be sent
     if 'service_name' in data:
         service_name = data['service_name']
 
@@ -175,9 +139,12 @@ def __send_sms_via_notify(data):
     """
     global NOTIFICATIONS_CLIENT
 
-    # Use Nannies Notify API if a Nannies SMS needs to be sent
+    # Read serialized email info
     if 'service_name' in data:
         service_name = data['service_name']
+
+        if service_name == 'Pay':
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.PAY_NOTIFY_API_KEY)
         if service_name == 'Nannies':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
         else:
