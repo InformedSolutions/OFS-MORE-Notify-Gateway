@@ -33,23 +33,27 @@ def change_api_key(request):
     try:
         mapped_json_request = Utilities.convert_json_to_python_object(request.data)
         serializer = NotifySerializer(data=mapped_json_request)
+
         if serializer.is_valid():
             # API key set
             global NOTIFICATIONS_CLIENT
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(serializer.data['api_key'])
             return JsonResponse({"message": "Api key successfully updated"}, status=200)
+
         err = __format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request", }, status=status.HTTP_400_BAD_REQUEST)
+
     except HTTPError as ex:
         exception_data = traceback.format_exc().splitlines()
         exception_array = [exception_data[-3:]]
         log.error(exception_array)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
+
     except Exception as ex:
-        exceptiondata = traceback.format_exc().splitlines()
-        exceptionarray = [exceptiondata[-3:]]
-        log.error(exceptionarray)
+        exception_data = traceback.format_exc().splitlines()
+        exception_array = [exception_data[-3:]]
+        log.error(exception_array)
         return JsonResponse(ex.__dict__, status=500)
 
 
@@ -63,21 +67,26 @@ def send_email(request):
     try:
         mapped_json_request = Utilities.convert_json_to_python_object(request.data)
         serializer = EmailSerializer(data=mapped_json_request)
+
         if serializer.is_valid():
             # call method to send email
             return __send_email_via_notify(serializer.data)
+
         err = __format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
+
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
+
     except HTTPError as ex:
-        exceptiondata = traceback.format_exc().splitlines()
-        exceptionarray = [exceptiondata[-3:]]
-        log.error(exceptionarray)
+        exception_data = traceback.format_exc().splitlines()
+        exception_array = [exception_data[-3:]]
+        log.error(exception_array)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
+
     except Exception as ex:
-        exceptiondata = traceback.format_exc().splitlines()
-        exceptionarray = [exceptiondata[-3:]]
-        log.error(exceptionarray)
+        exception_data = traceback.format_exc().splitlines()
+        exception_array = [exception_data[-3:]]
+        log.error(exception_array)
         return JsonResponse(ex.__dict__, status=500)
 
 
@@ -91,20 +100,24 @@ def send_sms(request):
     try:
         mapped_json_request = Utilities.convert_json_to_python_object(request.data)
         serializer = SmsSerializer(data=mapped_json_request)
+
         if serializer.is_valid():
             return __send_sms_via_notify(serializer.data)
+
         err = __format_error(serializer.errors)
         log.error("Django serialization error: " + err[0] + err[1])
         return JsonResponse({"message": err[0] + err[1], "error": "Bad Request"}, status=status.HTTP_400_BAD_REQUEST)
+
     except HTTPError as ex:
-        exceptiondata = traceback.format_exc().splitlines()
-        exceptionarray = [exceptiondata[-3:]]
-        log.error(exceptionarray)
+        exception_data = traceback.format_exc().splitlines()
+        exception_array = [exception_data[-3:]]
+        log.error(exception_array)
         return JsonResponse(ex.message, status=ex.status_code, safe=False)
+
     except Exception as ex:
-        exceptiondata = traceback.format_exc().splitlines()
-        exceptionarray = [exceptiondata[-3:]]
-        log.error(exceptionarray)
+        exception_data = traceback.format_exc().splitlines()
+        exception_array = [exception_data[-3:]]
+        log.error(exception_array)
         return JsonResponse(ex.__dict__, status=500)
 
 
@@ -115,26 +128,34 @@ def __send_email_via_notify(data):
     :return: The a 201 and the notify id if the request to Notify is successful
     """
     global NOTIFICATIONS_CLIENT
+
     # Read serialized email info
     # Use Nannies Notify API if a Nannies e-mail needs to be sent
     if 'service_name' in data:
         service_name = data['service_name']
+
+        if service_name == 'Pay':
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.PAY_NOTIFY_API_KEY)
         if service_name == 'Nannies':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
         else:
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     else:
         NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
+
     email = data['email']
     template_id = data['template_id']
+
     if 'reference' in data:
         reference = data['reference']
     else:
         reference = None
+
     if 'personalisation' in data:
         personalisation = data['personalisation']
     else:
         personalisation = None
+
     # Make request to Gov UK Notify API
     response = NOTIFICATIONS_CLIENT.send_email_notification(
         email_address=email,
@@ -153,6 +174,7 @@ def __send_sms_via_notify(data):
     :return: The a 201 and the notify id if the request to Notify is successful
     """
     global NOTIFICATIONS_CLIENT
+
     # Use Nannies Notify API if a Nannies SMS needs to be sent
     if 'service_name' in data:
         service_name = data['service_name']
@@ -162,17 +184,21 @@ def __send_sms_via_notify(data):
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     else:
         NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
+
     # Read serialized SMS Info
     phone_number = data['phone_number']
     template_id = data['template_id']
+
     if 'reference' in data:
         reference = data['reference']
     else:
         reference = None
+
     if 'personalisation' in data:
         personalisation = data['personalisation']
     else:
         personalisation = None
+
     # Make request to Gov UK Notify API
     response = NOTIFICATIONS_CLIENT.send_sms_notification(
         phone_number=phone_number,

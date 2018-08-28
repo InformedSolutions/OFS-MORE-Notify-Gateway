@@ -11,6 +11,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 NOTIFY_API_KEY = os.environ.get('NOTIFY_API_KEY')
 NANNIES_NOTIFY_API_KEY = os.environ.get('NANNIES_NOTIFY_API_KEY')
+PAY_NOTIFY_API_KEY = os.environ.get('PAY_NOTIFY_API_KEY')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -43,7 +44,7 @@ THIRD_PARTY_APPS = [
 ]
 
 PROJECT_APPS = [
-    'application',
+    'application.apps.ApplicationConfig',
 ]
 
 MIDDLEWARE = [
@@ -60,12 +61,12 @@ ROOT_URLCONF = 'notify.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.application.context_processors.debug',
+                'django.application.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -105,31 +106,39 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Output all logs to /logs directory
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'console': {
+  'version': 1,
+  'disable_existing_loggers': False,
+  'formatters': {
+    'console': {
             # exact format is not important, this is the minimum information
             'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
         },
-    },
-    'handlers': {
-        'django.server': {
-            'level': 'INFO',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'maxBytes': 1 * 1024 * 1024,
-            'filename': 'logs/output.log',
-            'formatter': 'console',
-            'maxBytes': 1 * 1024 * 1024,
-            'backupCount': 30
         },
+  'handlers': {
+    'file': {
+        'level': 'DEBUG',
+        'class': 'logging.handlers.TimedRotatingFileHandler',
+        'filename': 'logs/output.log',
+        'formatter': 'console',
+        'when': 'midnight',
+        'backupCount': 10
     },
-    'loggers': {
-        'django.server': {
-            'handlers': ['django.server'],
-            'level': 'INFO',
-            'propagate': True,
-        },
+    'console': {
+        'level': 'DEBUG',
+        'class': 'logging.StreamHandler'
+    },
+   },
+   'loggers': {
+     '': {
+       'handlers': ['file', 'console'],
+         'level': 'DEBUG',
+           'propagate': True,
+      },
+      'django.server': {
+       'handlers': ['file', 'console'],
+         'level': 'INFO',
+           'propagate': True,
+      },
     },
 }
 
