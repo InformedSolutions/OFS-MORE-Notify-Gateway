@@ -26,10 +26,3 @@ class SmsNotificationRequest(models.Model):
     template_id = models.UUIDField(blank=False)
     reference = models.CharField(max_length=100, blank=True, default='')
     personalisation = JSONField(blank=True)
-
-
-class ApiKey(models.Model):
-    """
-    This is where the notify-gateway validation rules are set for api-key update requests
-    """
-    api_key = models.CharField(max_length=100, blank=False)

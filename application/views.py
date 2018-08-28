@@ -13,7 +13,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 
 from .utilities import Utilities
-from .serializers import EmailSerializer, NotifySerializer, SmsSerializer
+from .serializers import EmailSerializer, SmsSerializer
 
 # Initiate logger
 log = logging.getLogger('django.server')
