@@ -100,7 +100,7 @@ def __send_email_via_notify(data):
 
         if service_name == 'Pay':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.PAY_NOTIFY_API_KEY)
-        if service_name == 'Nannies':
+        elif service_name == 'Nannies':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
         else:
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
@@ -145,7 +145,7 @@ def __send_sms_via_notify(data):
 
         if service_name == 'Pay':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.PAY_NOTIFY_API_KEY)
-        if service_name == 'Nannies':
+        elif service_name == 'Nannies':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
         else:
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
