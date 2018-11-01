@@ -120,6 +120,8 @@ def __send_email_via_notify(data):
     else:
         personalisation = None
 
+    log.info('Attempting email dispatch for email: {} with template_id: {} and service: {}.'.format(email, template_id, data.get('service_name', 'Childminder')))
+
     # Make request to Gov UK Notify API
     response = NOTIFICATIONS_CLIENT.send_email_notification(
         email_address=email,
