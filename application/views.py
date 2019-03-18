@@ -104,6 +104,8 @@ def __send_email_via_notify(data):
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
         elif service_name == 'Serious Incidents':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.SERIOUS_INCIDENT_NOTIFY_API_KEY)
+        elif service_name == 'Change Personal Details':
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.CHANGE_PERSONAL_DETAILS_NOTIFY_API_KEY)
         else:
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     else:
