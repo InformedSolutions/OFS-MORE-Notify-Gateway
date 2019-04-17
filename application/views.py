@@ -153,6 +153,8 @@ def __send_sms_via_notify(data):
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.PAY_NOTIFY_API_KEY)
         elif service_name == 'Nannies':
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NANNIES_NOTIFY_API_KEY)
+        elif service_name == 'Change Personal Details':
+            NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.CHANGE_PERSONAL_DETAILS_NOTIFY_API_KEY)
         else:
             NOTIFICATIONS_CLIENT = NotificationsAPIClient(settings.NOTIFY_API_KEY)
     else:
