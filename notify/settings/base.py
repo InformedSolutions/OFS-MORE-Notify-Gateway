@@ -14,6 +14,7 @@ NANNIES_NOTIFY_API_KEY = os.environ.get('NANNIES_NOTIFY_API_KEY')
 PAY_NOTIFY_API_KEY = os.environ.get('PAY_NOTIFY_API_KEY')
 SERIOUS_INCIDENT_NOTIFY_API_KEY = os.environ.get('SERIOUS_INCIDENT_NOTIFY_API_KEY')
 CHANGE_PERSONAL_DETAILS_NOTIFY_API_KEY = os.environ.get('CHANGE_PERSONAL_DETAILS_NOTIFY_API_KEY')
+NEW_ADULTS_IN_HOME_API_KEY = os.environ.get('NEW_ADULTS_IN_HOME_API_KEY')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
