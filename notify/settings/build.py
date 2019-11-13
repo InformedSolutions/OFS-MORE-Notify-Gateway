@@ -1,11 +1,10 @@
 from .base import *
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
 MIDDLEWARE_DEV = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
 
 MIDDLEWARE = MIDDLEWARE + MIDDLEWARE_DEV
