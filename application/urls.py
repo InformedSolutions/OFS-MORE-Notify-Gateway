@@ -10,7 +10,7 @@ import re
 from django.conf import settings
 from django.conf.urls import url
 
-from .views import change_api_key, send_email, send_sms
+from .views import send_email, send_sms
 
 # Configure URL's here
 urlpatterns = [
@@ -18,8 +18,6 @@ urlpatterns = [
     url(r'^api/v1/notifications/email/$', send_email),
     # Send SMS URL
     url(r'^api/v1/notifications/sms/$', send_sms),
-    # Update Notify API Key URL
-    url(r'^api/v1/notifications/api-key/$', change_api_key),
 ]
 
 # Set the URL prefix - currently it's notify-gateway

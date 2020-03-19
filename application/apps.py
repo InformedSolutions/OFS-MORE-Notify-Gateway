@@ -8,5 +8,5 @@ OFS-MORE-CCN3: Apply to be a Childminder Beta
 from django.apps import AppConfig
 
 
-class AppConfig(AppConfig):
-    name = 'app'
+class ApplicationConfig(AppConfig):
+    name = 'application'

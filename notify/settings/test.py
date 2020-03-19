@@ -1,0 +1,7 @@
+from .base import *
+
+DEBUG = False
+
+ALLOWED_HOSTS = ['*']
+
+INSTALLED_APPS = BUILTIN_APPS + THIRD_PARTY_APPS + PROJECT_APPS

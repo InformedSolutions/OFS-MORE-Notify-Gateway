@@ -10,6 +10,11 @@ import os
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 NOTIFY_API_KEY = os.environ.get('NOTIFY_API_KEY')
+NANNIES_NOTIFY_API_KEY = os.environ.get('NANNIES_NOTIFY_API_KEY')
+PAY_NOTIFY_API_KEY = os.environ.get('PAY_NOTIFY_API_KEY')
+SERIOUS_INCIDENT_NOTIFY_API_KEY = os.environ.get('SERIOUS_INCIDENT_NOTIFY_API_KEY')
+CHANGE_PERSONAL_DETAILS_NOTIFY_API_KEY = os.environ.get('CHANGE_PERSONAL_DETAILS_NOTIFY_API_KEY')
+NEW_ADULTS_IN_HOME_API_KEY = os.environ.get('NEW_ADULTS_IN_HOME_API_KEY')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -42,7 +47,7 @@ THIRD_PARTY_APPS = [
 ]
 
 PROJECT_APPS = [
-    'application',
+    'application.apps.ApplicationConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,12 +64,12 @@ ROOT_URLCONF = 'notify.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.application.context_processors.debug',
+                'django.application.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -113,21 +118,29 @@ LOGGING = {
         },
     },
     'handlers': {
-        'django.server': {
-            'level': 'INFO',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'maxBytes': 1 * 1024 * 1024,
-            'filename': 'logs/output.log',
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/output.log'),
             'formatter': 'console',
-            'maxBytes': 1 * 1024 * 1024,
-            'backupCount': 30
+            'when': 'midnight',
+            'backupCount': 10
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler'
         },
     },
     'loggers': {
-        'django.server': {
-            'handlers': ['django.server'],
-            'level': 'INFO',
+        '': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
             'propagate': True,
+        },
+        'django.server': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': False,
         },
     },
 }
