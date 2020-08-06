@@ -1,5 +1,5 @@
 Django==1.11.29
-djangorestframework==3.9.1
+djangorestframework==3.11.1
 psycopg2-binary==2.7.4
 notifications-python-client==5.4.0
 coreapi==2.3.3
